@@ -1,0 +1,171 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: clover
+  name: 🍀️四叶草简体拼音
+  version: "1.0.0"
+  author:
+    - fkxxyz - https://www.fkxxyz.com
+  description: |
+    词库由这四个项目的数据生成：
+      1. pypinyin
+      2. 刘邵博的360万中文词库+词性+词频
+      3. rime-pinyin-simp
+      4. 清华大学开源词库
+    特点：
+      1. 结合搜狗输入法的输入习惯
+      2. 默认开启 emoji 表情支持
+      3. 加上很多特殊符号的输入支持
+      4. 繁简切换支持
+  dependencies:
+    - emoji
+
+switches:
+  - name: zh_simp_s2t
+    reset: 0
+    states: [ 简, 繁 ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+  - name: full_shape
+    reset: 0
+    states: [ 半, 全 ]
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, 英 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier@emoji_suggestion
+    - simplifier
+    - uniquifier
+
+simplifier:
+  option_name: zh_simp_s2t
+  opencc_config: s2t.json
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+
+translator:
+  dictionary: clover
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+  full_shape:
+    "`": "｀"
+    "~": "～"
+    "!": "！"
+    "@": "＠"
+    "#": "＃"
+    "$": "￥"
+    "%": "％"
+    "^": "……"
+    "&": "＆"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "＋"
+    "-": "－"
+    "=": "＝"
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    ";": "；"
+    "'": "‘"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+  half_shape:
+    "`": "·"
+    "~": "～"
+    "!": "！"
+    "@": "@"
+    "#": "#"
+    "$": "￥"
+    "%": "%"
+    "^": "……"
+    "&": "&"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "+"
+    "-": "-"
+    "=": "="
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    ";": "；"
+    "'": "’"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    # hack: to enable "/fh" style symbols, '/' must be mapped to a [list].
+    # so those who have customized '/' for direct commit won't be affected by
+    # this change.
+    punct: "^/([0-9]+[a-z]*|[a-z]+)$"
+

@@ -1,0 +1,20 @@
+
+name: clover
+version: "1"
+sort: by_weight
+
+import_tables:
+  - clover.base
+  - clover.phrase
+  - THUOCL_animal
+  - THUOCL_caijing
+  - THUOCL_car
+  - THUOCL_chengyu
+  - THUOCL_diming
+  - THUOCL_food
+  - THUOCL_IT
+  - THUOCL_law
+  - THUOCL_lishimingren
+  - THUOCL_medical
+  - THUOCL_poem
+
