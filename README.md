@@ -16,11 +16,20 @@
    - 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)
 
    - 自带[清华大学开源词库](https://github.com/thunlp/THUOCL)。
+   
 2. 加入 [emoji](https://github.com/rime/rime-emoji) 支持
+
 3. 支持繁简切换，用 [opencc](https://github.com/BYVoid/OpenCC) 从简体切换为繁体
+
 4. 让符号的输入符合搜狗拼音的习惯
+
 5. 部分符号能够通过拼音输入，如 ²
+
+   [rime-symbols](https://github.com/fkxxyz/rime-symbols) 该模块与此项目独立，你可以把这个模块放到别的输入法上用。
+
 6. 实现一个词库设置工具，能够实现打patch，设置模糊音，导入词库等。
+
+   （暂未实现）
 
 如果你想了解此项目词库的具体生成过程，请来这两个地方： [clover-dict-gen](https://github.com/fkxxyz/clover-dict-gen) 和 [thuocl2rime](https://github.com/fkxxyz/thuocl2rime)
 
@@ -47,6 +56,8 @@ patch:
   schema_list/schema: clover
 ```
 
-然后，切换到 rime 输入法，打开菜单点击重新部署即可（一般会自动重新部署）。
+然后，切换到 rime 输入法，打开菜单点击重新部署即可（一般会自动重新部署），由于词库量大，第一次部署需要一定的时间耐心等待即可。
 
-最后，有什么建议或者需要什么帮助，欢迎在 [issues](https://github.com/fkxxyz/rime-cloverpinyin/issues) 提出。
+提示：默认按 F4 打开方案选单，再按 2，可以繁简切换、emoji开关、全角半角切换。
+
+最后，有什么建议想法或者需要什么帮助，欢迎在 [issues](https://github.com/fkxxyz/rime-cloverpinyin/issues) 提出。

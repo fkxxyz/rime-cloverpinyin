@@ -28,6 +28,9 @@ switches:
   - name: emoji_suggestion
     reset: 1
     states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+  - name: symbol_support
+    reset: 1
+    states: [ "无符", "符" ]
   - name: ascii_punct
     reset: 0
     states: [ 。，, ．， ]
@@ -59,6 +62,7 @@ engine:
     - script_translator
   filters:
     - simplifier@emoji_suggestion
+    - simplifier@symbol_support
     - simplifier
     - uniquifier
 
@@ -71,6 +75,11 @@ emoji_suggestion:
   option_name: emoji_suggestion
   tips: all
 
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
+
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
@@ -79,6 +88,7 @@ speller:
     - abbrev/^([zcs]h).+$/$1/
     - derive/^([nl])ue$/$1ve/
     - derive/^([jqxy])u/$1v/
+    - derive/^ding$/din/
     - derive/un$/uen/
     - derive/ui$/uei/
     - derive/iu$/iou/
