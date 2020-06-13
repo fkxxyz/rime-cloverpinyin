@@ -1,0 +1,7 @@
+https://github.com/fkxxyz/chinese-dictionary-3.6million/releases/download/raw/dict360w.zip	d9086ef0d72064e4de5cc3f16b157024	360万中文词库+词性+词频.zip
+https://github.com/rime/rime-essay/archive/88055afa3752e4582fa887765d962a30e02bb1fa.zip	138f086cc2a539bfb6935141bcf36330	rime-essay-88055afa3752e4582fa887765d962a30e02bb1fa.zip	rime-essay	88055afa3752e4582fa887765d962a30e02bb1fa
+https://github.com/rime/rime-pinyin-simp/archive/bb5a6dfa871669d2f451b477bfff6d131df6f6c6.zip	808dd6fad0cb2cb0aab850fc7bd3e161	rime-pinyin-simp-bb5a6dfa871669d2f451b477bfff6d131df6f6c6.zip	rime-pinyin-simp	bb5a6dfa871669d2f451b477bfff6d131df6f6c6
+https://github.com/thunlp/THUOCL/archive/a30ce79d895d01ab5132a5c74c29703ff7efb4cc.zip	349c4ff3833668d08085e66d4de5d66e	THUOCL-a30ce79d895d01ab5132a5c74c29703ff7efb4cc.zip	THUOCL	a30ce79d895d01ab5132a5c74c29703ff7efb4cc
+https://github.com/rime/rime-emoji/archive/c99d34e4a837349e4679a110bb4b94f71fe015ae.zip	c42e513e0d8163465e9e89420d2692b9	rime-emoji-c99d34e4a837349e4679a110bb4b94f71fe015ae.zip	rime-emoji	c99d34e4a837349e4679a110bb4b94f71fe015ae
+https://github.com/fkxxyz/rime-symbols/archive/c34c6a93eb9ce4fec239e2115199f631a6c64763.zip	071d4339d3c5afa43735d26fa7d9cd6c	rime-symbols-c34c6a93eb9ce4fec239e2115199f631a6c64763.zip	rime-symbols	c34c6a93eb9ce4fec239e2115199f631a6c64763
+
