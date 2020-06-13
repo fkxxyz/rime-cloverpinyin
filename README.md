@@ -1,16 +1,3 @@
----
-title: 再也不用为中文输入法而烦恼了
-cover: false
-date: 2020-06-10 07:28:01
-categories:
-- 原创开发
-tags:
-- rime
-- fcitx
-- 输入法
-typora-root-url: ../..
----
-
 你是否经历过搜狗输入法总是闪退bug的绝望？
 
 你是否经历过 fcitx 自带输入法的词库简陋？
