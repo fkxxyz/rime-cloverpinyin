@@ -8,18 +8,12 @@ schema:
   author:
     - fkxxyz - https://www.fkxxyz.com
   description: |
-    词库由这六个项目的数据生成：
-      1. pypinyin
-      2. jieba
-      3. 刘邵博的360万中文词库+词性+词频
-      4. rime八股文
-      5. rime-pinyin-simp
-      6. 清华大学开源词库
-    特点：
+    由🍀️四叶草亲自定制，特点：
       1. 结合搜狗输入法的输入习惯
       2. 默认开启 emoji 表情支持
       3. 加上很多特殊符号的输入支持
       4. 繁简切换支持
+      5. 许多智能纠错
   dependencies:
     - emoji
 
@@ -86,19 +80,30 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
+    # 基础
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([zcs]h).+$/$1/
-    - derive/^([nl])ue$/$1ve/
-    - derive/^([jqxy])u/$1v/
-    - derive/^ding$/din/
-    - derive/un$/uen/
-    - derive/ui$/uei/
-    - derive/iu$/iou/
-    - derive/([aeiou])ng$/$1gn/
-    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
-    - derive/ong$/on/
-    - derive/ao$/oa/
-    - derive/([iu])a(o|ng?)$/a$1$2/
+    
+    # 补全
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/   # o = ou; o = ong
+    - derive/ong$/on/      # on = ong
+    - derive/^ding$/din/     # din = ding
+    
+    # 处理 v 和 u
+    - derive/^([nl])ue$/$1ve/   # nve = nue; lve = lue
+    - derive/^([jqxy])u/$1v/    # v = u; v = u
+    
+    # 智能纠错
+    - derive/ao$/oa/       # oa = ao
+    - derive/([iu])a(o|ng?)$/a$1$2/   # aio = iao; aing = iang; aung = uang
+    - derive/([aeiou])ng$/$1gn/   # gn = ng
+    - derive/un$/uen/    # uen = un
+    - derive/ui$/uei/    # uei = ui
+    - derive/iu$/iou/    # iou = ui
+    - derive/tie$/tei/    # tei = tie
+    - derive/([bpmfdtnlgkhjqxzcsryw])([iu])/$2$1/   # u和i不小心提前
+    - derive/i$/ii/      # ii = i  # i 不小心按两下
+    - derive/u$/uu/      # ui = u  # u 不小心按两下
 
 translator:
   dictionary: clover

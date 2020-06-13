@@ -9,10 +9,6 @@ import argparse
 import os
 import sys
 
-# 从 jieba 库里得到词频信息
-jieba.dt.initialize()
-FREQ = jieba.dt.FREQ
-
 # 从 pypinyin 库里得到所有文字及其若干个拼音
 pinyin_dict = pypinyin.pinyin_dict.pinyin_dict
 replace_symbol_to_no_symbol = pypinyin.style._utils.replace_symbol_to_no_symbol
@@ -34,7 +30,7 @@ class DictGenerator:
             if pinyin == 'n':
                 pinyin = 'en'
             elif pinyin == 'm':
-                pinyin == 'mu'
+                pinyin = 'mu'
             else:
                 return None  # 不允许出现单声母的拼音
         return pinyin
@@ -55,6 +51,8 @@ class DictGenerator:
                         ...
                     }
         """
+        jieba.dt.initialize()
+
         def symbol2fixPinyin(pinyin):
             pinyin = replace_symbol_to_no_symbol(pinyin)
             fixed_pinyin = self.fixPinyin(pinyin)
@@ -80,7 +78,7 @@ class DictGenerator:
         self.word_dict = {}
         for i in self.word_pinyin_s:
             word = chr(i)
-            freq = FREQ[word] if word in FREQ else 1
+            freq = jieba.dt.FREQ[word] if word in jieba.dt.FREQ else 1
 
             # 将多音字的第一个音设为 FREQ 里的频率
             self.word_dict[(word, self.word_pinyin_s[i][0])] = freq
@@ -150,6 +148,8 @@ class DictGenerator:
                 if len(v) > 1:
                     if v[1].isalpha():
                         pinyin = self.fixPinyin(v[1])
+                        if v[1] in initials_set:
+                            print(self.fixPinyin(v[1]))
                 if pinyin is None:
                     pinyin = self.word_pinyin_s[ord(word)][0]
 
@@ -211,7 +211,7 @@ class DictGenerator:
         text_phrase = ''
         for phrase_st in phrase_list:
             # 通过 pypinyin 库获取到词组的拼音
-            phrase_pinyin = pypinyin.lazy_pinyin(phrase_st[0])
+            phrase_pinyin = map(self.fixPinyin, pypinyin.lazy_pinyin(phrase_st[0]))
             text_phrase += phrase_st[0] + '\t' + \
                 ' '.join(phrase_pinyin) + '\t' + \
                 str(phrase_st[1]) + '\n'
