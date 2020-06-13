@@ -37,6 +37,10 @@
 
 由于 rime 是跨平台的，因此🍀️四叶草简体拼音也能在各个平台使用，所以请先参考 https://rime.im/download/ 安装好 rime 引擎，然后在 [releases](https://github.com/fkxxyz/rime-cloverpinyin/releases) 界面下载最新版本的 **clover.schema-版本号.zip** 或 **clover.schema-build-版本号.zip** ，解压到[用户资料目录](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)。
 
+clover.schema 和 clover.schema-build 的区别是
+- **clover.schema** 不包含二进制文件，复制到新机器上之后需要重新部署。
+- **clover.schema-build** 包含二进制文件目录（build目录），复制到新机器上之后重新部署的时间大量缩短。
+
 然后修改配置目录的 default.custom.yaml ，将此输入法加入列表（小狼毫可以直接点右下角右键，输入法设定可以直接勾选）
 
 ```shell
