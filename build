@@ -123,19 +123,22 @@ extract 360万中文词库+词性+词频.zip || exit
 ln -sf rime-essay/essay.txt essay.txt || exit
 ln -sf rime-pinyin-simp/pinyin_simp.dict.yaml pinyin_simp.dict.yaml || exit
 
-# 开始生成词典
-../src/clover-dict-gen --minfreq=$minfreq || exit
-for i in THUOCL/data/THUOCL_*; do
-	echo "转换 $i"
-	../src/thuocl2rime $i || exit
-done
-
 # 生成符号列表
 cd rime-symbols || exit
 mkdir -p opencc || exit
 cd opencc || exit
 ../rime-symbols-gen || exit
 cd ../.. || exit
+
+# 生成符号词汇
+cat */opencc/*.txt | opencc -c t2s.json | uniq > symbols.txt
+
+# 开始生成词典
+../src/clover-dict-gen --minfreq=$minfreq || exit
+for i in THUOCL/data/THUOCL_*; do
+	echo "转换 $i"
+	../src/thuocl2rime $i || exit
+done
 
 # 生成 data 目录
 mkdir -p ../data || exit

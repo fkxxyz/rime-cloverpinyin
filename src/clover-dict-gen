@@ -265,6 +265,16 @@ def main(args):
         100000, PrintProcess('正在合并袖珍简化字拼音的词库 (%s/%s)').process)
     print('成功合并袖珍简化字拼音 %s 个汉字， %s 个词组。' % r)
 
+    # 合并转换符号词汇
+    r = generator.mergeDict(
+        open('symbols.txt',
+            'r',
+            encoding = 'utf-8').read(),
+        10000,
+        0,
+        100000, PrintProcess('正在合并符号词汇 (%s/%s)').process)
+    print('成功合并符号词汇 %s 个汉字， %s 个词组。' % r)
+
     word_dict_name = 'clover.base'
     parse_dict_name = 'clover.phrase'
 
