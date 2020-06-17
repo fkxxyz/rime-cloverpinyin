@@ -101,12 +101,12 @@ speller:
     - derive/ui$/uei/    # uei = ui
     - derive/iu$/iou/    # iou = ui
     - derive/tie$/tei/    # tei = tie
-    - derive/([bpmfdtnlgkhjqxzcsryw])([iu])/$2$1/   # u和i不小心提前
     - derive/i$/ii/      # ii = i  # i 不小心按两下
     - derive/u$/uu/      # ui = u  # u 不小心按两下
 
 translator:
   dictionary: clover
+  candidate_sort_by: 1
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/

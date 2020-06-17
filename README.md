@@ -29,11 +29,11 @@
    - 用 [pypinyin](https://github.com/mozillazg/python-pinyin) 项目生成所有字词的拼音
    - 合并[结巴中文分词](https://github.com/fxsjy/jieba)项目、[rime八股文](https://github.com/rime/rime-essay)和[袖珍簡化字拼音](https://github.com/rime/rime-pinyin-simp)的字的字频
 
-   - 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)
+   - 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)，该词库是用ansj分词对270G新闻语料进行分词统计词频获得
 
-   - [清华大学开源词库](https://github.com/thunlp/THUOCL)。
+   - [清华大学开源词库](https://github.com/thunlp/THUOCL)，统计来自各大主流网站如CSDN博客、新浪新闻、搜狗语料
 
-2. 加入繁简切换，包括自定义词库也能切换繁体（这在rime官方默认配置是没有现成的）
+2. 词库本身基于简体，并且加入繁简切换，包括自定义词库也能切换繁体（朙月拼音输入简体时的需要经过opencc转换，而且自定义词库也得手动转换成繁体才能繁简切换，而袖珍簡化字拼音不支持繁体）
 
 3. 默认加入 emoji 表情输入支持
 
@@ -165,6 +165,12 @@ patch:
 
 小狼毫的字体、配色方案参考 [官方配置指南--小狼毫](https://github.com/rime/home/wiki/CustomizationGuide#一例定製小狼毫字體字號)
 
+#### 候选横排
+
+候选词默认展示是竖排的，如果你习惯于横排展示候选词，请看 [【小狼毫】外觀設定](https://github.com/rime/home/wiki/CustomizationGuide#%E5%B0%8F%E7%8B%BC%E6%AF%AB%E5%A4%96%E8%A7%80%E8%A8%AD%E5%AE%9A)
+
+方便起见，在此也附上网页版的配置链接 [RIME西米](https://bennyyip.github.io/Rime-See-Me/)
+
 ### 关于发布页
 
 由于 rime 处理词库的原理是提前将词库转换为二进制文件，这个过程成为部署，所以我在[发布页](https://github.com/fkxxyz/rime-cloverpinyin/releases)提供了两个压缩包，一个包含二进制文件，一个不包含二进制文件。
@@ -172,7 +178,7 @@ patch:
 - **clover.schema** 不包含二进制文件，复制到新机器上之后需要重新部署。
 - **clover.schema-build** 包含二进制文件目录（build目录），复制到新机器上之后重新部署的时间大量缩短。
 
-### 关于rime的配置
+## 基本配置
 
 所有配置都围绕着用户资料夹展开，参考 [Rime 中的數據文件分佈及作用](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)
 
@@ -224,7 +230,6 @@ patch:
     - derive/ui$/uei/    # uei = ui
     - derive/iu$/iou/    # iou = ui
     - derive/tie$/tei/    # tei = tie
-    - derive/([bpmfdtnlgkhjqxzcsryw])([iu])/$2$1/   # u和i不小心提前
     - derive/i$/ii/      # ii = i  # i 不小心按两下
     - derive/u$/uu/      # ui = u  # u 不小心按两下
 ```
@@ -266,7 +271,6 @@ patch:
     - derive/ui$/uei/    # uei = ui
     - derive/iu$/iou/    # iou = ui
     - derive/tie$/tei/    # tei = tie
-    - derive/([bpmfdtnlgkhjqxzcsryw])([iu])/$2$1/   # u和i不小心提前
     - derive/i$/ii/      # ii = i  # i 不小心按两下
     - derive/u$/uu/      # ui = u  # u 不小心按两下
 ```
@@ -275,27 +279,99 @@ patch:
 
 修改完成后，记得重新部署生效。
 
+## 常见问题
+
 ### 繁简切换、emoji、符号输入
 
 由于 rime 的设定，繁简切换等需要打开方案选单来完成，方案选单默认有个快捷键 F4 ，按 F4，再按 2，即可看到一些设定，选择相应的开关设定即可。
 
 这个快捷键可以修改，详见 [一例、定製喚出方案選單的快捷鍵](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E5%96%9A%E5%87%BA%E6%96%B9%E6%A1%88%E9%81%B8%E5%96%AE%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5)
 
-### 目前不足
+如果你不想用 emoji 或者符号输入的功能，则需要修改配置文件才能永久关闭该功能：
+
+修改 clover.custom.yaml ，添加一个补丁：
+
+```yaml
+  switches:
+    - name: zh_simp_s2t
+      reset: 0
+      states: [ 简, 繁 ]
+    - name: emoji_suggestion
+      reset: 1
+      states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+    - name: symbol_support
+      reset: 1
+      states: [ "无符", "符" ]
+    - name: ascii_punct
+      reset: 0
+      states: [ 。，, ．， ]
+    - name: full_shape
+      reset: 0
+      states: [ 半, 全 ]
+    - name: ascii_mode
+      reset: 0
+      states: [ 中, 英 ]
+```
+
+将 emoji_suggestion 或 symbol_support 里面的 reset 改成 0 即可。
+
+这里其实是定制方案选单的选项，reset 表示默认选中 states 的第几个选项，更多请看[一例、定製簡化字輸出](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E7%B0%A1%E5%8C%96%E5%AD%97%E8%BC%B8%E5%87%BA)
+
+### 删除一个自造词
+
+有时候错误的输入了一个词语，这个错误的词语每次会出现在候选框中，看着难过，那么可以删除这个词语。
+
+按上下键高亮选中这个词语，然后按 Ctrl+Del 或 Shift+Del即可删除该词。（鼠须管的快捷键是 Fn + Shift + Delete）
+
+### 词序总是错乱
 
 有时候，发现以为自己最经常打的字候选词里一定排在第一位，但是时间长了发现好像并不是这么回事，似乎自己最近打的词比使用频率最高的词排序还要靠前，这导致大量的输入错误严重降低了打字效率，后来看到这个帖子
 
 [『技术贴』『改进版』小狼毫五笔自动造词、网盘同步](https://tieba.baidu.com/p/5085900915)
 
-原来 rime 的排序特点就是如此，但是这会导致词序经常很乱，也无法固定首位，怎么办呢，自己改代码！
+原来 rime 的排序特点就是如此，但是这会导致词序经常很乱，也无法固定首位，怎么办呢，我就这个问题向rime作者反馈，得到的回应是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
+
+rime作者的[回应](https://github.com/rime/librime/issues/377#issuecomment-644682195)是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
 
 后续我会将改好的 patch 发布，以及发布探索如何改代码的博文。
 
+### emoji 字体呈方块状
+
+这是因为没有安装 emoji 字体导致。
+
+在 archlinux 下，可以直接从 aur 安装 apple emoji 的字体：
+
+``` shell
+yay -S ttf-apple-emoji
+```
+
+在其它 linux 发行版，可以从这个地址下载到 apple emoji 的字体
+
+https://git.synh.me/dmitry/AUR/-/raw/master/files/ttf-apple-emoji/apple-color-emoji.ttc
+
+下载好之后，需要复制到 /usr/share/fonts 的某个子目录下，然后更新字体缓存
+
+```shell
+cd /usr/share/fonts
+sudo fonts.dir
+sudo mkfontdir
+```
+
+
+
+在其它平台，需要自己想办法了。
+
+### 其它
+
+其它常见问题看[官方文档的常见问题](https://github.com/rime/home/wiki/CustomizationGuide#diy-%E8%99%95%E6%96%B9%E9%9B%86)吧。
+
 ## 自己构建词库
 
-我在发布页提供的是已经生成好的词库和部署好的二进制文件，直接使用即可。
+一般情况下，我在发布页提供的是已经生成好的词库和部署好的二进制文件，直接使用即可。
 
-该仓库的内容只包含构建四叶草输入法方案的脚本，如果你想要自己从零构建词库，需要以下环境
+如果你想自己从零开始构建，或者想为别的 linux 发行版打包，那么继续往下看。
+
+该仓库的内容只包含构建四叶草输入法方案的脚本，构建需要以下环境
 
 操作系统： linux
 
