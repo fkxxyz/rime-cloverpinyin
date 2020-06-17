@@ -110,6 +110,11 @@ cat "$SHELL_FOLDER/src/file_list.txt" | while read line; do
 		down "$url" "$name" || exit
 	fi
 
+	echo "url = $url"
+	echo "md5 = $md5"
+	echo "name = $name"
+	echo "dst = $dst"
+	echo "commit = $commit"
 	echo "$md5  $name" | md5sum -c || exit
 
 	if [ $dst ]; then
@@ -139,11 +144,13 @@ for i in THUOCL/data/THUOCL_*; do
 	echo "转换 $i"
 	../src/thuocl2rime $i || exit
 done
+cp ../src/sogou_new_words.dict.yaml .
+./libscel/scel.py >> sogou_new_words.dict.yaml || exit
 
 # 生成 data 目录
 mkdir -p ../data || exit
 cp ../src/*.yaml ../data || exit
-mv clover.*.yaml THUOCL_*.yaml ../data || exit
+mv clover.*.yaml THUOCL_*.yaml sogou_new_words.dict.yaml ../data || exit
 
 cd ../data
 

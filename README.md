@@ -16,9 +16,9 @@
 
 **这个项目我会持续更新，因为我一直在用输入法，我会调教到完全合我的口味习惯为止（我过去一直在用搜狗拼音输入法）。所以如果你觉得哪里不好用，或者哪里想改善，一定要及时在 [issues](https://github.com/fkxxyz/rime-cloverpinyin/issues) 提出，我只要看到就会回复。**
 
-项目地址：
+- 博文地址	https://www.fkxxyz.com/d/cloverpinyin
 
-- **github**	https://github.com/fkxxyz/rime-cloverpinyin
+- 项目地址	https://github.com/fkxxyz/rime-cloverpinyin
 
 ## 特色
 

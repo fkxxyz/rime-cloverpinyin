@@ -17,4 +17,5 @@ import_tables:
   - THUOCL_lishimingren
   - THUOCL_medical
   - THUOCL_poem
+  - sogou_new_words
 

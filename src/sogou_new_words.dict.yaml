@@ -1,0 +1,8 @@
+
+# 该词库生成自 https://pinyin.sogou.com/dict/detail/index/4
+
+name: sogou_new_words
+version: "1"
+sort: by_weight
+
+...
