@@ -44,7 +44,7 @@
 
    [rime-symbols](https://github.com/fkxxyz/rime-symbols) 该模块与此项目独立，你也可以把这个模块放到别的方案上用。
 
-5. 修改了几乎所有特殊符号的按键，使之符合搜狗输入法的习惯
+5. 修改了几乎所有特殊符号的按键，定制全部快捷键，使之符合搜狗输入法的习惯
 
 不磨蹭了，直接介绍怎么开始使用吧。
 
@@ -280,9 +280,17 @@ patch:
 
 ## 常见问题
 
-### 繁简切换、emoji、符号输入
+### 各种快捷键
 
-由于 rime 的设定，繁简切换等需要打开方案选单来完成，方案选单默认有个快捷键 F4 ，按 F4，再按 2，即可看到一些设定，选择相应的开关设定即可。
+该方案的默认快捷键为：
+
+- 繁简切换	Ctrl+Shift+2 或 Ctrl+Shift+f 。
+- emoji开关	Ctrl+Shift+3
+- 符号输入	Ctrl+Shift+4
+- ascii标点切换	Ctrl+Shift+5 、 Ctrl+,  或 Ctrl+。
+- 全半角切换	Ctrl+Shift+6 、 Shift+Space
+
+由于 rime 的设定，这些切换也可以通过打开方案选单来完成，方案选单默认有个快捷键 F4 ，按 F4，再按 2，即可看到这些设定，选择相应的开关设定即可。
 
 这个快捷键可以修改，详见 [一例、定製喚出方案選單的快捷鍵](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E5%96%9A%E5%87%BA%E6%96%B9%E6%A1%88%E9%81%B8%E5%96%AE%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5)
 
@@ -315,6 +323,12 @@ patch:
 将 emoji_suggestion 或 symbol_support 里面的 reset 改成 0 即可。
 
 这里其实是定制方案选单的选项，reset 表示默认选中 states 的第几个选项，更多请看[一例、定製簡化字輸出](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E7%B0%A1%E5%8C%96%E5%AD%97%E8%BC%B8%E5%87%BA)
+
+### 出现候选框时按 Shift 字母不会上屏
+
+由于 rime 的中英文切换的快捷键和 fcitx 的切换输入法的快捷键都是 shift ，fcitx 的快捷键优先于 rime，所以会导致这种情况。
+
+解决方法：右键托盘图标，配置，打开 fcitx 的配置，点全局配置，额外的激活输入法快捷键，选择禁用。点显示高级选项，在这里的激活输入法可以设置为 shift
 
 ### 删除一个自造词
 
@@ -405,7 +419,7 @@ rime基础库： [librime](https://github.com/rime/librime)
 
 minfreq 代表360万词里面指定的最小词频，频率低于该值的词语会被筛选掉，达到精简词库的目的，默认是100，该值越小，最终生成的词库越大，为 0 表示不精简词库（会生成大约 100 兆左右的词库）。
 
-构建完成后，可以打包，在 data 目录生成压缩包
+构建完成后，可以打包，在 data 目录生成发布用的压缩包
 
 ```
 ./pack [ver]
@@ -425,3 +439,4 @@ ver 表示版本号，例如 1.1.2
 
 当然你也可以直接[联系我](https://www.fkxxyz.com/about/#%E5%85%B3%E4%BA%8E%E6%88%91)本人。
 
+###### 
