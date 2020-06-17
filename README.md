@@ -24,15 +24,14 @@
 
 我亲自打造的基于[rime](https://rime.im/)的简体拼音输入方案，有以下几大特点：
 
-1. 完全从零开始制作文字的拼音和基础词库，导入了几个很好用的开源词库：
+1. 完全从零开始制作文字的拼音和基础词库，导入了几个很好用的词库：
 
    - 用 [pypinyin](https://github.com/mozillazg/python-pinyin) 项目生成所有字词的拼音
    - 合并[结巴中文分词](https://github.com/fxsjy/jieba)项目、[rime八股文](https://github.com/rime/rime-essay)和[袖珍簡化字拼音](https://github.com/rime/rime-pinyin-simp)的字的字频
-
-   - 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)，该词库是用ansj分词对270G新闻语料进行分词统计词频获得
-
+- 由百度搜索到某个人基于大数据做过的[360万中文词库+词性+词频](https://download.csdn.net/download/xmp3x/8621683)，该词库是用ansj分词对270G新闻语料进行分词统计词频获得
    - [清华大学开源词库](https://github.com/thunlp/THUOCL)，统计来自各大主流网站如CSDN博客、新浪新闻、搜狗语料
-
+- 搜狗细胞词库 [网络流行新词【官方推荐】](https://pinyin.sogou.com/dict/detail/index/4)
+   
 2. 词库本身基于简体，并且加入繁简切换，包括自定义词库也能切换繁体（朙月拼音输入简体时的需要经过opencc转换，而且自定义词库也得手动转换成繁体才能繁简切换，而袖珍簡化字拼音不支持繁体）
 
 3. 默认加入 emoji 表情输入支持
@@ -377,7 +376,7 @@ sudo mkfontdir
 
 python版本： 3
 
-python依赖的库： [jieba](https://github.com/fxsjy/jieba)、[pypinyin](https://github.com/mozillazg/python-pinyin)、[opencc](https://github.com/BYVoid/OpenCC)
+python依赖的库： [jieba](https://github.com/fxsjy/jieba)、[pypinyin](https://github.com/mozillazg/python-pinyin)、[opencc](https://github.com/BYVoid/OpenCC)、requests
 
 下载工具（三者任意一个均可）： [aria2](http://aria2.sourceforge.net/)、[wget](https://www.gnu.org/software/wget/wget.html)、[curl](https://curl.haxx.se/)
 
