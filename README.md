@@ -10,6 +10,7 @@
 
 ## 目录
 
+<!--ts-->
       * [目录](#目录)
       * [简介](#简介)
       * [特色](#特色)
@@ -38,6 +39,7 @@
          * [其它](#其它)
       * [构建](#构建)
       * [写在最后](#写在最后)
+<!--te-->
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
