@@ -8,13 +8,13 @@
 
 <!--more-->
 
-# 🍀️四叶草拼音输入方案
+# :four_leaf_clover:四叶草拼音输入方案
 
 
 目录
 =================
 
-   * [<g-emoji class="g-emoji" alias="four_leaf_clover" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f340.png">🍀️</g-emoji>四叶草拼音输入方案](#️四叶草拼音输入方案)
+   * [:four_leaf_clover:四叶草拼音输入方案](#️四叶草拼音输入方案)
       * [目录](#目录)
       * [简介](#简介)
       * [特色](#特色)
@@ -22,7 +22,7 @@
          * [linux端( fcitx )](#linux端-fcitx-)
             * [安装 fcitx](#安装-fcitx)
             * [安装 rime](#安装-rime)
-            * [安装<g-emoji class="g-emoji" alias="four_leaf_clover" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f340.png">🍀️</g-emoji>四叶草输入方案](#安装️四叶草输入方案)
+            * [安装:four_leaf_clover:四叶草输入方案](#安装️四叶草输入方案)
             * [美观](#美观)
          * [windows端（小狼毫）](#windows端小狼毫)
             * [下载安装小狼毫](#下载安装小狼毫)
@@ -149,7 +149,7 @@ pacman -S fcitx-rime
 
 
 
-#### 安装🍀️四叶草输入方案
+#### 安装:four_leaf_clover:四叶草输入方案
 
 在 archlinux 下，可以从 [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 直接安装即可：
 
@@ -380,11 +380,7 @@ patch:
 
 [『技术贴』『改进版』小狼毫五笔自动造词、网盘同步](https://tieba.baidu.com/p/5085900915)
 
-原来 rime 的排序特点就是如此，但是这会导致词序经常很乱，也无法固定首位，怎么办呢，我就这个问题向rime作者反馈，得到的回应是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
-
-rime作者的[回应](https://github.com/rime/librime/issues/377#issuecomment-644682195)是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
-
-后续我会将改好的 patch 发布，以及发布探索如何改代码的博文。
+原来 rime 的排序特点就是如此，但是这会导致词序经常很乱，也无法固定首位，怎么办呢，我就这个问题向rime作者反馈，得到的[回应](https://github.com/rime/librime/issues/377#issuecomment-644682195)是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
 
 ### emoji 字体呈方块状
 
