@@ -8,6 +8,10 @@
 
 <!--more-->
 
+## 目录
+
+[TOC]
+
 ## 简介
 
 在linux端，很多拼音输入法有少许 bug 或卡顿，或功能不全，所以接触了 [rime](https://rime.im) ，然而自带的[朙月拼音](https://github.com/rime/rime-luna-pinyin)和[袖珍簡化字拼音](https://github.com/rime/rime-pinyin-simp)均不是很不是很理想，但是探索过程中发现很多很好的开源项目提供词库，而 rime 输入法引擎几乎拥有所有的优点（开源、干净无广告、运行流畅、跨平台、...），甚至云同步也能用坚果云之类的服务手动实现，唯一的缺点就是门槛高定制困难，默认配置的不习惯劝退了很多人。
@@ -374,6 +378,18 @@ sudo mkfontdir
 
 在其它平台，需要自己想办法了。
 
+### 同步词库
+
+rime 允许不同系统之间进行词库的同步。
+
+该功能详见 [同步用戶資料](https://github.com/rime/home/wiki/UserGuide#%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99)
+
+默认同步的文件夹在用户资料夹下 sync ，点击同步时，会生成这个文件夹，你也可以设置 installation.yaml 里面的 sync_dir 来修改同步文件夹。
+
+用户词库词频信息被保存在 同步文件夹下的对应 id 里的 clover.userdb.txt 里，每次点击同步时，会合并所有 id 里的该文件。
+
+所以可以利用云同步服务例如 [坚果云](https://www.jianguoyun.com/) 一类的软件，来实现个人不同电脑之间的词库同步。
+
 ### 其它
 
 其它常见问题看[官方文档的常见问题](https://github.com/rime/home/wiki/CustomizationGuide#diy-%E8%99%95%E6%96%B9%E9%9B%86)吧。
@@ -439,4 +455,3 @@ ver 表示版本号，例如 1.1.2
 
 当然你也可以直接[联系我](https://www.fkxxyz.com/about/#%E5%85%B3%E4%BA%8E%E6%88%91)本人。
 
-###### 
