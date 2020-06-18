@@ -10,7 +10,36 @@
 
 ## 目录
 
-[TOC]
+      * [目录](#目录)
+      * [简介](#简介)
+      * [特色](#特色)
+      * [开始](#开始)
+         * [linux端( fcitx )](#linux端-fcitx-)
+            * [安装 fcitx](#安装-fcitx)
+            * [安装 rime](#安装-rime)
+            * [安装<g-emoji class="g-emoji" alias="four_leaf_clover" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f340.png">🍀️</g-emoji>四叶草输入方案](#安装️四叶草输入方案)
+            * [美观](#美观)
+         * [windows端（小狼毫）](#windows端小狼毫)
+            * [下载安装小狼毫](#下载安装小狼毫)
+            * [下载输入方案](#下载输入方案)
+            * [美观](#美观-1)
+            * [候选横排](#候选横排)
+         * [关于发布页](#关于发布页)
+      * [基本配置](#基本配置)
+         * [候选词个数](#候选词个数)
+         * [模糊音](#模糊音)
+      * [常见问题](#常见问题)
+         * [各种快捷键](#各种快捷键)
+         * [出现候选框时按 Shift 字母不会上屏](#出现候选框时按-shift-字母不会上屏)
+         * [删除一个自造词](#删除一个自造词)
+         * [词序总是错乱](#词序总是错乱)
+         * [emoji 字体呈方块状](#emoji-字体呈方块状)
+         * [同步词库](#同步词库)
+         * [其它](#其它)
+      * [构建](#构建)
+      * [写在最后](#写在最后)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ## 简介
 
