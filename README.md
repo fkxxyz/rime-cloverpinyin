@@ -11,42 +11,46 @@
 # :four_leaf_clover:四叶草拼音输入方案
 
 
+
 目录
 =================
 
-   * [:four_leaf_clover:四叶草拼音输入方案](#️四叶草拼音输入方案)
-      * [目录](#目录)
-      * [简介](#简介)
-      * [特色](#特色)
-      * [开始](#开始)
-         * [linux端( fcitx )](#linux端-fcitx-)
-            * [安装 fcitx](#安装-fcitx)
-            * [安装 rime](#安装-rime)
-            * [安装:four_leaf_clover:四叶草输入方案](#安装️四叶草输入方案)
-            * [美观](#美观)
-         * [windows端（小狼毫）](#windows端小狼毫)
-            * [下载安装小狼毫](#下载安装小狼毫)
-            * [下载输入方案](#下载输入方案)
-            * [美观](#美观-1)
-            * [候选横排](#候选横排)
-         * [关于发布页](#关于发布页)
-      * [基本配置](#基本配置)
-         * [候选词个数](#候选词个数)
-         * [模糊音](#模糊音)
-      * [常见问题](#常见问题)
-         * [各种快捷键](#各种快捷键)
-         * [出现候选框时按 Shift 字母不会上屏](#出现候选框时按-shift-字母不会上屏)
-         * [删除一个自造词](#删除一个自造词)
-         * [词序总是错乱](#词序总是错乱)
-         * [emoji 字体呈方块状](#emoji-字体呈方块状)
-         * [同步词库](#同步词库)
-         * [其它](#其它)
-      * [构建](#构建)
-      * [写在最后](#写在最后)
+   * [:four_leaf_clover:四叶草拼音输入方案](#four_leaf_clover四叶草拼音输入方案)
+   * [目录](#目录)
+   * [简介](#简介)
+   * [特色](#特色)
+   * [开始](#开始)
+      * [linux端( fcitx )](#linux端-fcitx-)
+         * [安装 fcitx](#安装-fcitx)
+         * [安装 rime](#安装-rime)
+         * [安装:four_leaf_clover:四叶草输入方案](#安装four_leaf_clover四叶草输入方案)
+         * [美观](#美观)
+      * [windows端（小狼毫）](#windows端小狼毫)
+         * [下载安装小狼毫](#下载安装小狼毫)
+         * [下载输入方案](#下载输入方案)
+         * [美观](#美观-1)
+         * [候选横排](#候选横排)
+      * [关于发布页](#关于发布页)
+   * [基本配置](#基本配置)
+      * [候选词个数](#候选词个数)
+      * [模糊音](#模糊音)
+   * [常见问题](#常见问题)
+      * [各种快捷键](#各种快捷键)
+      * [出现候选框时按 Shift 字母不会上屏](#出现候选框时按-shift-字母不会上屏)
+      * [删除一个自造词](#删除一个自造词)
+      * [词序总是错乱](#词序总是错乱)
+      * [emoji 字体呈方块状](#emoji-字体呈方块状)
+      * [导入自定义词库](#导入自定义词库)
+         * [基本步骤](#基本步骤)
+         * [例子详解](#例子详解)
+      * [同步词库](#同步词库)
+      * [其它](#其它)
+   * [构建](#构建)
+   * [写在最后](#写在最后)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
-## 简介
+# 简介
 
 在linux端，很多拼音输入法有少许 bug 或卡顿，或功能不全，所以接触了 [rime](https://rime.im) ，然而自带的[朙月拼音](https://github.com/rime/rime-luna-pinyin)和[袖珍簡化字拼音](https://github.com/rime/rime-pinyin-simp)均不是很不是很理想，但是探索过程中发现很多很好的开源项目提供词库，而 rime 输入法引擎几乎拥有所有的优点（开源、干净无广告、运行流畅、跨平台、...），甚至云同步也能用坚果云之类的服务手动实现，唯一的缺点就是门槛高定制困难，默认配置的不习惯劝退了很多人。
 
@@ -58,7 +62,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 - 项目地址	https://github.com/fkxxyz/rime-cloverpinyin
 
-## 特色
+# 特色
 
 我亲自打造的基于[rime](https://rime.im/)的简体拼音输入方案，有以下几大特点：
 
@@ -86,7 +90,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 不磨蹭了，直接介绍怎么开始使用吧。
 
-## 开始
+# 开始
 
 rime 是跨平台的，在以下四个平台可用：
 
@@ -104,9 +108,9 @@ rime 是跨平台的，在以下四个平台可用：
 
 下面介绍在 linux 和 windows 端如何安装。
 
-### linux端( fcitx )
+## linux端( fcitx )
 
-#### 安装 fcitx
+### 安装 fcitx
 
 在 archlinux 下：
 
@@ -137,7 +141,7 @@ export LC_CTYPE="zh_CN.UTF-8"
 
 
 
-#### 安装 rime
+### 安装 rime
 
 在 archlinux 下，安装 rime：
 
@@ -149,7 +153,7 @@ pacman -S fcitx-rime
 
 
 
-#### 安装:four_leaf_clover:四叶草输入方案
+### 安装:four_leaf_clover:四叶草输入方案
 
 在 archlinux 下，可以从 [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 直接安装即可：
 
@@ -178,19 +182,19 @@ patch:
 
 
 
-#### 美观
+### 美观
 
 关于 fcitx 的皮肤，可以参考这里：
 
 [原来 fcitx 也可以这么美 —— 对 fcitx 使用搜狗皮肤的改进](https://www.fkxxyz.com/d/ssfconv/)
 
-### windows端（小狼毫）
+## windows端（小狼毫）
 
-#### 下载安装小狼毫
+### 下载安装小狼毫
 
 来 [rime下载页](https://rime.im/download/) 下载最新版本的小狼毫（注意 Windows XP 只最高只能下载 0.12.0），然后按照提示进行安装。
 
-#### 下载输入方案
+### 下载输入方案
 
 来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
 
@@ -198,30 +202,30 @@ patch:
 
 然后切换到中州韵输入法，右键托盘图标，点击输入法设定，勾选上四叶草输入方案，确定，再点右键托盘图标，重新部署，等待数分钟后，即可使用。
 
-#### 美观
+### 美观
 
 小狼毫的字体、配色方案参考 [官方配置指南--小狼毫](https://github.com/rime/home/wiki/CustomizationGuide#一例定製小狼毫字體字號)
 
-#### 候选横排
+### 候选横排
 
 候选词默认展示是竖排的，如果你习惯于横排展示候选词，请看 [【小狼毫】外觀設定](https://github.com/rime/home/wiki/CustomizationGuide#%E5%B0%8F%E7%8B%BC%E6%AF%AB%E5%A4%96%E8%A7%80%E8%A8%AD%E5%AE%9A)
 
 方便起见，在此也附上网页版的配置链接 [RIME西米](https://bennyyip.github.io/Rime-See-Me/)
 
-### 关于发布页
+## 关于发布页
 
 由于 rime 处理词库的原理是提前将词库转换为二进制文件，这个过程成为部署，所以我在[发布页](https://github.com/fkxxyz/rime-cloverpinyin/releases)提供了两个压缩包，一个包含二进制文件，一个不包含二进制文件。
 
 - **clover.schema** 不包含二进制文件，复制到新机器上之后需要重新部署。
 - **clover.schema-build** 包含二进制文件目录（build目录），复制到新机器上之后重新部署的时间大量缩短。
 
-## 基本配置
+# 基本配置
 
 所有配置都围绕着用户资料夹展开，参考 [Rime 中的數據文件分佈及作用](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)
 
 另外，需要注意 rime 的配置文件严格遵守 yaml 语法，缩进都是两个空格，不能用 tab 代替，否则配置是无效的（很多人折腾死在这）
 
-### 候选词个数
+## 候选词个数
 
 修改用户资料夹的 default.custom.yaml ，找到 menu/page_size 字段，如果没有则创建，设置该字段的值即可。例如
 
@@ -234,7 +238,7 @@ patch:
 
 详见 [一例、定製每頁候選數](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E6%AF%8F%E9%A0%81%E5%80%99%E9%81%B8%E6%95%B8)
 
-### 模糊音
+## 模糊音
 
 对于模糊音的配置，目前还没有方便的图形界面的配置，如果有需要的话照做吧：
 
@@ -316,9 +320,9 @@ patch:
 
 修改完成后，记得重新部署生效。
 
-## 常见问题
+# 常见问题
 
-### 各种快捷键
+## 各种快捷键
 
 该方案的默认快捷键为：
 
@@ -362,19 +366,19 @@ patch:
 
 这里其实是定制方案选单的选项，reset 表示默认选中 states 的第几个选项，更多请看[一例、定製簡化字輸出](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E7%B0%A1%E5%8C%96%E5%AD%97%E8%BC%B8%E5%87%BA)
 
-### 出现候选框时按 Shift 字母不会上屏
+## 出现候选框时按 Shift 字母不会上屏
 
 由于 rime 的中英文切换的快捷键和 fcitx 的切换输入法的快捷键都是 shift ，fcitx 的快捷键优先于 rime，所以会导致这种情况。
 
 解决方法：右键托盘图标，配置，打开 fcitx 的配置，点全局配置，额外的激活输入法快捷键，选择禁用。点显示高级选项，在这里的激活输入法可以设置为 shift
 
-### 删除一个自造词
+## 删除一个自造词
 
 有时候错误的输入了一个词语，这个错误的词语每次会出现在候选框中，看着难过，那么可以删除这个词语。
 
 按上下键高亮选中这个词语，然后按 Ctrl+Del 或 Shift+Del即可删除该词。（鼠须管的快捷键是 Fn + Shift + Delete）
 
-### 词序总是错乱
+## 词序总是错乱
 
 有时候，发现以为自己最经常打的字候选词里一定排在第一位，但是时间长了发现好像并不是这么回事，似乎自己最近打的词比使用频率最高的词排序还要靠前，这导致大量的输入错误严重降低了打字效率，后来看到这个帖子
 
@@ -382,7 +386,7 @@ patch:
 
 原来 rime 的排序特点就是如此，但是这会导致词序经常很乱，也无法固定首位，怎么办呢，我就这个问题向rime作者反馈，得到的[回应](https://github.com/rime/librime/issues/377#issuecomment-644682195)是，这是记忆力算法，刚开始词序可能会变化较大，长期会趋于稳定，那这么看来暂时先这样用着时间长就好了。
 
-### emoji 字体呈方块状
+## emoji 字体呈方块状
 
 这是因为没有安装 emoji 字体导致。
 
@@ -408,7 +412,144 @@ sudo mkfontdir
 
 在其它平台，需要自己想办法了。
 
-### 同步词库
+## 导入自定义词库
+
+可以借助[深蓝词库转换](https://github.com/studyzy/imewlconverter)这个项目，导入它所能支持的所有细胞词库如搜狗拼音细胞词库等。
+
+### 基本步骤
+
+首先在用户资料夹下建立 clover.dict.yaml ，内容为
+
+```yaml
+name: clover
+version: "1"
+sort: by_weight
+
+import_tables:
+  - clover.base
+  - clover.phrase
+  - THUOCL_animal
+  - THUOCL_caijing
+  - THUOCL_car
+  - THUOCL_chengyu
+  - THUOCL_diming
+  - THUOCL_food
+  - THUOCL_IT
+  - THUOCL_law
+  - THUOCL_lishimingren
+  - THUOCL_medical
+  - THUOCL_poem
+  - sogou_new_words
+```
+
+建立了这个文件之后，会覆盖默认的词库。
+
+关于这个文件的格式详解： [Dict.yaml 詳解](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md#dictyaml-%E8%A9%B3%E8%A7%A3)
+
+在这里，需要说明 import_tables 导入表里的每一项。
+
+- **clover.base**   这是单字的字库，包含所有字的拼音、字频，对应文件 clover.base.dict.yaml
+- **clover.phrase**   这是词组的词库，包含所有基本词汇的拼音、词频，对应文件 clover.phrase.dict.yaml
+- **THUOCL_***   这是清华大学开源词库，对应文件 THUOCL_*.dict.yaml
+- **sogou_new_words**   这是每周更新的搜狗网络流行新词，对应文件 sogou_new_words.dict.yaml
+
+然后你可以在该文件的后面，按照上述格式（两个空格一个减号一个空格），任意添加你自己创建或导入的词库，当然你也可以删除上述你不想要的词库。
+
+需要注意以下几点：
+
+- clover.base 是不可以删除的，否则会失去所有文字的拼音导致导入任何词库都无效。
+
+- 导入的词库也遵循同样的格式，但是导入的词库的 import_tables 项是无效的（也就是不能嵌套）
+
+- 导入的词库的 name 字段必须和文件名一致，后缀为 .dict.yaml
+
+  例如文件名 “音乐词汇大全.dict.yaml” 的第一行为
+
+  ```yaml
+  name: 音乐词汇大全
+  ```
+
+  否则导入的该词库也会无效
+
+### 例子详解
+
+下面以导入搜狗音乐词汇大全的细胞词库为例
+
+首先来这里下载该细胞词库 [音乐词汇大全](https://pinyin.sogou.com/dict/detail/index/15145)
+
+然后用深蓝词库转换为 “音乐词汇大全.txt” ，下面是不同平台的使用方法：
+
+- Windows端
+
+  下载地址 [imewlconverter_Windows.zip](https://github.com/studyzy/imewlconverter/releases/download/v2.8.0/imewlconverter_Windows.zip)
+
+  打开深蓝词库转换，指定好要转换的文件、源类型为 “搜狗细胞词库scel”，目标类型为 “Rime中州韵”，点击转换，提示是否保存点“是”，保存为 “音乐词汇大全.txt”
+
+- archlinux
+
+  在 archlinux 下直接从 AUR 安装深蓝词库转换即可 yay -S imewlconverter-bin
+
+  然后执行
+
+  ```shell
+  imewlconverter -i:scel 音乐词汇大全.scel -o:rime 音乐词汇大全.txt
+  ```
+
+- 其它 linux 发行版
+
+  下载地址 [imewlconverter_Linux_Mac.tar.gz](https://github.com/studyzy/imewlconverter/releases/download/v2.8.0/imewlconverter_Linux_Mac.tar.gz) ，解压得到 ImeWlConverterCmd
+
+  然后执行
+
+  ```shell
+  ImeWlConverterCmd -i:scel 音乐词汇大全.scel -o:rime 音乐词汇大全.txt
+  ```
+
+- macOS端自测
+
+然后在用户资料夹下创建 “音乐词汇大全.dict.yaml”，内容为
+
+```yaml
+name: 音乐词汇大全
+version: "1.0"
+sort: by_weight
+...
+阿炳	a bing	1
+阿甲文	a jia wen	1
+阿拉伯风格曲	a la bo feng ge qu	1
+阿勒曼舞曲	a le man wu qu	1
+```
+
+把“音乐词汇大全.txt”里面的词都追加到后面。
+
+然后在用户资料夹下建立 clover.dict.yaml ，内容为
+
+```yaml
+name: clover
+version: "1"
+sort: by_weight
+
+import_tables:
+  - clover.base
+  - clover.phrase
+  - THUOCL_animal
+  - THUOCL_caijing
+  - THUOCL_car
+  - THUOCL_chengyu
+  - THUOCL_diming
+  - THUOCL_food
+  - THUOCL_IT
+  - THUOCL_law
+  - THUOCL_lishimingren
+  - THUOCL_medical
+  - THUOCL_poem
+  - sogou_new_words
+  - 音乐词汇大全
+```
+
+右键托盘图标，点击“重新部署”，片刻之后，打字测试看看有没有相应的词汇吧。
+
+## 同步词库
 
 rime 允许不同系统之间进行词库的同步。
 
@@ -420,11 +561,11 @@ rime 允许不同系统之间进行词库的同步。
 
 所以可以利用云同步服务例如 [坚果云](https://www.jianguoyun.com/) 一类的软件，来实现个人不同电脑之间的词库同步。
 
-### 其它
+## 其它
 
 其它常见问题看[官方文档的常见问题](https://github.com/rime/home/wiki/CustomizationGuide#diy-%E8%99%95%E6%96%B9%E9%9B%86)吧。
 
-## 构建
+# 构建
 
 一般情况下，我在发布页提供的是已经生成好的词库和部署好的二进制文件，直接使用即可。
 
@@ -475,7 +616,7 @@ ver 表示版本号，例如 1.1.2
 
 ---
 
-## 写在最后
+# 写在最后
 
 此项目完全开源，你可以随意 fork 或修改和定制，如果你觉得好用，可以来[AUR投票](https://aur.archlinux.org/packages/rime-cloverpinyin/)和在[github上star](https://github.com/fkxxyz/rime-cloverpinyin)，投票和star的人越多越容易被搜索到，以此更好地传播出去。
 
