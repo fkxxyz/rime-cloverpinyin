@@ -13,6 +13,7 @@ import sys
 pinyin_dict = pypinyin.pinyin_dict.pinyin_dict
 replace_symbol_to_no_symbol = pypinyin.style._utils.replace_symbol_to_no_symbol
 initials_set = set(pypinyin.style._constants._INITIALS)   # 声母表
+initials_set.add('ng')
 
 # 修复一些多音字错误
 pypinyin.load_phrases_dict({
@@ -25,12 +26,18 @@ class DictGenerator:
     def fixPinyin(self, pinyin):
         """
             检查拼音，规范化拼音，失败则返回 None
+                因为输入法里不允许出现单声母的拼音，
+                    否则会出现无法输入正常的词组的情况。
+                而汉字中比如 “嗯” 的拼音是 n 和 ng
+                通常输入法会让 “嗯” 的拼音为 en
         """
         if pinyin in initials_set:
             if pinyin == 'n':
                 pinyin = 'en'
             elif pinyin == 'm':
                 pinyin = 'mu'
+            elif pinyin == 'ng':
+                pinyin = 'en'
             else:
                 return None  # 不允许出现单声母的拼音
         return pinyin
@@ -52,11 +59,12 @@ class DictGenerator:
                     }
         """
         jieba.dt.initialize()
+        self.t2s = opencc.OpenCC('t2s.json')
 
         def symbol2fixPinyin(pinyin):
             pinyin = replace_symbol_to_no_symbol(pinyin)
             fixed_pinyin = self.fixPinyin(pinyin)
-            if fixed_pinyin is None:
+            if fixed_pinyin is None or fixed_pinyin in initials_set:
                 print(pinyin)
                 assert False  # 库的拼音不规范，需要手动规范化
             return fixed_pinyin
@@ -148,8 +156,6 @@ class DictGenerator:
                 if len(v) > 1:
                     if v[1].isalpha():
                         pinyin = self.fixPinyin(v[1])
-                        if v[1] in initials_set:
-                            print(self.fixPinyin(v[1]))
                 if pinyin is None:
                     pinyin = self.word_pinyin_s[ord(word)][0]
 
@@ -164,6 +170,7 @@ class DictGenerator:
 
             # 如果是词组，则合并到 self.phrase_r 里
             else:
+                word = self.t2s.convert(word)  # 确保词组为简体
                 if word in self.phrase_r:
                     self.phrase_r[word] += freq
                 else:
@@ -236,43 +243,28 @@ def main(args):
             print(self.msg % (count, total))
 
     # 合并 360万 的词库
-    r = generator.mergeDict(
-        open('词典360万（个人整理）.txt',
-            'r',
-            encoding = 'utf-8').read(),
-        1,
-        args.minfreq,
-        100000, PrintProcess('正在合并360万中文词库 (%s/%s)').process)
+    text = open('词典360万（个人整理）.txt', 'r', encoding = 'utf-8').read()
+    r = generator.mergeDict(text, 1, args.minfreq, 100000,
+        PrintProcess('正在合并360万中文词库 (%s/%s)').process)
     print('成功合并360万中文词库 %s 个汉字， %s 个词组。' % r)
 
-    # 合并 rime 自带的转换成简体的八股文，权值 100
-    t2s = opencc.OpenCC('t2s.json')
-    print('正在将八股文转换为简体')
-    essay_simp = t2s.convert(open('essay.txt', 'r', encoding = 'utf-8').read())
-    r = generator.mergeDict(essay_simp,
-        60,
-        0,
-        100000, PrintProcess('正在合并八股文 (%s/%s)').process)
+    # 合并 rime 自带的八股文，权值 60
+    text = open('essay.txt', 'r', encoding = 'utf-8').read()
+    r = generator.mergeDict(text, 60, 0, 100000,
+        PrintProcess('正在合并八股文 (%s/%s)').process)
     print('成功合并八股文 %s 个汉字， %s 个词组。' % r)
 
-    # 合并袖珍简化字拼音的词库
-    r = generator.mergeDict(
-        open('pinyin_simp.dict.yaml',
-            'r',
-            encoding = 'utf-8').read().replace('罗嗦', '啰嗦'),
-        60,
-        0,
-        100000, PrintProcess('正在合并袖珍简化字拼音的词库 (%s/%s)').process)
+    # 合并袖珍简化字拼音的词库，权值 60
+    text = open('pinyin_simp.dict.yaml', 'r', encoding = 'utf-8').read(
+        ).replace('罗嗦', '啰嗦')
+    r = generator.mergeDict(text, 60, 0, 100000,
+        PrintProcess('正在合并袖珍简化字拼音的词库 (%s/%s)').process)
     print('成功合并袖珍简化字拼音 %s 个汉字， %s 个词组。' % r)
 
     # 合并转换符号词汇
-    r = generator.mergeDict(
-        open('symbols.txt',
-            'r',
-            encoding = 'utf-8').read(),
-        10000,
-        0,
-        100000, PrintProcess('正在合并符号词汇 (%s/%s)').process)
+    text = open('symbols.txt', 'r', encoding = 'utf-8').read()
+    r = generator.mergeDict(text, 10000, 0, 100000,
+        PrintProcess('正在合并符号词汇 (%s/%s)').process)
     print('成功合并符号词汇 %s 个汉字， %s 个词组。' % r)
 
     word_dict_name = 'clover.base'
