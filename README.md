@@ -161,7 +161,7 @@ pacman -S fcitx-rime
 yay -S fcitx-cloverpinyin
 ```
 
-在其它发行版下，来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
+在其它发行版下，来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 或 https://fkxxyz.lanzous.com/b00zl958j 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
 
 然后将其解压到 ~/.config/fcitx/rime
 
@@ -196,7 +196,7 @@ patch:
 
 ### 下载输入方案
 
-来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
+来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 或 https://fkxxyz.lanzous.com/b00zl958j 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
 
 然后将其解压到 %appdata%/rime 即可（如果你更改了用户配置目录，那么解压到对应目录即可）。
 
@@ -218,6 +218,8 @@ patch:
 
 - **clover.schema** 不包含二进制文件，复制到新机器上之后需要重新部署。
 - **clover.schema-build** 包含二进制文件目录（build目录），复制到新机器上之后重新部署的时间大量缩短。
+
+由于国内访问 github 较慢，所以我在蓝奏云也上传了一份 https://fkxxyz.lanzous.com/b00zl958j
 
 # 基本配置
 
