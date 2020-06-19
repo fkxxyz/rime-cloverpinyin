@@ -161,6 +161,7 @@ class DictGenerator:
 
             # 如果是单字，则合并到 self.word_dict 里
             if len(word) == 1:
+                word = self.t2s.convert(word)  # 确保字为简体
                 key = (word, pinyin)
                 if key in self.word_dict:
                     self.word_dict[key] += freq
