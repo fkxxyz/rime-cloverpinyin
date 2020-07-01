@@ -200,6 +200,8 @@ patch:
 > - [小狼毫 0.12.0](https://bintray.com/rime/weasel/release/0.12.0)〔[下载](https://dl.bintray.com/rime/weasel/weasel-0.12.0.0-installer.exe)〕
 >   适用于 Windows XP SP3
 
+如果上述官网无法访问或者访问较慢，我在蓝奏网盘也上传了一份 https://fkxxyz.lanzous.com/b00zm9j5g
+
 #### 下载输入方案
 
 来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 或 https://fkxxyz.lanzous.com/b00zl958j 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
