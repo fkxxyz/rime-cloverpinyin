@@ -264,9 +264,9 @@ patch:
 
 如果你无法访问上述现成的配色方案工具，本网站也克隆了一份：
 
-小狼毫： [Rime-See-Me](/Rime-See-Me)
+小狼毫： [Rime-See-Me](https://www.fkxxyz.com/Rime-See-Me)
 
-鼠须管： [Rime-See-Me-squirrel](/Rime-See-Me-squirrel)
+鼠须管： [Rime-See-Me-squirrel](https://www.fkxxyz.com/Rime-See-Me-squirrel)
 
 修改配置文件时要格外[注意](#基本配置)
 
