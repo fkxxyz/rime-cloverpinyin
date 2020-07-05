@@ -317,7 +317,7 @@ patch:
 >     style/display_tray_icon: true  # 显示托盘图标
 > ```
 
-只需要将   style/horizontal: true  这一行添加到 patch: 后面即可，注意前面有两个空格，不能多也不能少，如下图所示
+只需要将   style/horizontal: true  这一行添加到 patch: 的后一行即可，注意开头有两个空格，冒号和true之间也有一个空格，不能多也不能少，如下图所示
 
 ![](https://www.fkxxyz.com/img/weasel-7.png)
 
