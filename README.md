@@ -24,7 +24,7 @@
             * [安装 fcitx](#安装-fcitx)
             * [安装 rime](#安装-rime)
             * [安装:four_leaf_clover:四叶草输入方案](#安装four_leaf_clover四叶草输入方案)
-            * [切换到:four_leaf_clover:四叶草输入方案](#切换到:four_leaf_clover:四叶草输入方案)
+            * [切换到:four_leaf_clover:四叶草输入方案](#切换到four_leaf_clover四叶草输入方案)
             * [美观](#美观)
          * [windows端（小狼毫）](#windows端小狼毫)
             * [下载安装小狼毫](#下载安装小狼毫)
