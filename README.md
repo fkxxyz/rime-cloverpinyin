@@ -253,8 +253,8 @@ patch:
 > # weasel.custom.yaml
 > 
 > patch:
->     "style/font_face": "明兰"  # 字体名称，从记事本等处的系统字体对话框里能看到
->     "style/font_point": 14     # 字号，只认数字的，不认「五号」、「小五」这样的
+>   "style/font_face": "明兰"  # 字体名称，从记事本等处的系统字体对话框里能看到
+>   "style/font_point": 14     # 字号，只认数字的，不认「五号」、「小五」这样的
 > ```
 >
 > ### 一例、定制【小狼毫】配色方案
@@ -265,18 +265,18 @@ patch:
 > # weasel.custom.yaml
 > 
 > patch:
->     "style/color_scheme": starcraft    # 这项用于选中下面定义的新方案
->     "preset_color_schemes/starcraft":  # 在配色方案列表里加入标识为 starcraft 的新方案
->       name: 星际我争霸／StarCraft
->       author: Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment
->       text_color: 0xccaa88             # 编码行文字颜色，24位色值，用十六进制书写方便些，顺序是蓝绿红0xBBGGRR
->       candidate_text_color: 0x30bb55   # 候选项文字颜色，当与文字颜色不同时指定
->       back_color: 0x000000             # 底色
->       border_color: 0x1010a0           # 边框颜色，与底色相同则为无边框的效果
->       hilited_text_color: 0xfecb96     # 高亮文字，即与当前高亮候选对应的那部份输入码
->       hilited_back_color: 0x000000     # 设定高亮文字的底色，可起到凸显高亮部份的作用
->       hilited_candidate_text_color: 0x60ffa8  # 高亮候选项的文字颜色，要醒目！
->       hilited_candidate_back_color: 0x000000  # 高亮候选项的底色，若与背景色不同就会显出光棒
+>   "style/color_scheme": starcraft    # 这项用于选中下面定义的新方案
+>   "preset_color_schemes/starcraft":  # 在配色方案列表里加入标识为 starcraft 的新方案
+>   name: 星际我争霸／StarCraft
+>     author: Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment
+>     text_color: 0xccaa88             # 编码行文字颜色，24位色值，用十六进制书写方便些，顺序是蓝绿红0xBBGGRR
+>     candidate_text_color: 0x30bb55   # 候选项文字颜色，当与文字颜色不同时指定
+>     back_color: 0x000000             # 底色
+>     border_color: 0x1010a0           # 边框颜色，与底色相同则为无边框的效果
+>     hilited_text_color: 0xfecb96     # 高亮文字，即与当前高亮候选对应的那部份输入码
+>     hilited_back_color: 0x000000     # 设定高亮文字的底色，可起到凸显高亮部份的作用
+>     hilited_candidate_text_color: 0x60ffa8  # 高亮候选项的文字颜色，要醒目！
+>     hilited_candidate_back_color: 0x000000  # 高亮候选项的底色，若与背景色不同就会显出光棒
 > ```
 >
 > 效果自己看！
@@ -312,9 +312,9 @@ patch:
 > ```
 > # weasel.custom.yaml
 > patch:
->     style/horizontal: true      # 候选横排
->     style/inline_preedit: true  # 内嵌编码（仅支持TSF）
->     style/display_tray_icon: true  # 显示托盘图标
+>   style/horizontal: true      # 候选横排
+>   style/inline_preedit: true  # 内嵌编码（仅支持TSF）
+>   style/display_tray_icon: true  # 显示托盘图标
 > ```
 
 只需要将   style/horizontal: true  这一行添加到 patch: 的后一行即可，注意开头有两个空格，冒号和true之间也有一个空格，不能多也不能少，如下图所示
