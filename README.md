@@ -24,6 +24,7 @@
             * [安装 fcitx](#安装-fcitx)
             * [安装 rime](#安装-rime)
             * [安装:four_leaf_clover:四叶草输入方案](#安装four_leaf_clover四叶草输入方案)
+            * [切换到:four_leaf_clover:四叶草输入方案](#切换到:four_leaf_clover:四叶草输入方案)
             * [美观](#美观)
          * [windows端（小狼毫）](#windows端小狼毫)
             * [下载安装小狼毫](#下载安装小狼毫)
@@ -166,6 +167,8 @@ yay -S fcitx-cloverpinyin
 
 然后将其解压到 ~/.config/fcitx/rime
 
+#### 切换到:four_leaf_clover:四叶草输入方案
+
 创建 ~/.config/fcitx/rime/default.custom.yaml ，内容为
 
 ```yaml
@@ -181,8 +184,6 @@ patch:
 
 关于 default.custom.yaml 文件的更多解释，可以参考[官方文档定制指南](https://github.com/rime/home/wiki/CustomizationGuide)
 
-
-
 #### 美观
 
 关于 fcitx 的皮肤，可以参考这里：
@@ -190,6 +191,8 @@ patch:
 [原来 fcitx 也可以这么美 —— 对 fcitx 使用搜狗皮肤的改进](https://www.fkxxyz.com/d/ssfconv/)
 
 ### windows端（小狼毫）
+
+下面以 win7 为例截图示范。
 
 #### 下载安装小狼毫
 
@@ -206,15 +209,41 @@ patch:
 
 来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 或 https://fkxxyz.lanzous.com/b00zl958j 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
 
-然后将其解压到 %appdata%/rime 即可（如果你更改了用户配置目录，那么解压到对应目录即可）。
+切换到小狼毫输入法（默认快捷键 Ctrl+Shift，或直接从托盘图标选择）
 
-然后切换到中州韵输入法，右键托盘图标，点击输入法设定，勾选上四叶草输入方案，确定，再点右键托盘图标，重新部署，等待数分钟后，即可使用。
+![](https://www.fkxxyz.com/img/weasel-1.png)
+
+然后右键托盘图标“中”，选择“用户文件夹”
+
+![](https://www.fkxxyz.com/img/weasel-2.png)
+
+然后将你刚刚下载的压缩包解压到这里即可，解压后的效果如下
+
+![](https://www.fkxxyz.com/img/weasel-3.png)
+
+#### 切换输入方案
+
+接着找到“输入法设定”
+
+![](https://www.fkxxyz.com/img/weasel-4.png)
+
+在方案选单设定中找到“四叶草简体拼音”并勾选，一般你不需要其它方案了，其它选项可以全部去掉。
+
+然后点“中”
+
+![](https://www.fkxxyz.com/img/weasel-5.png)
+
+
 
 #### 美观
 
-配色方案已经可以使用右键托盘图标，选择“输入法设定”来选择方案。
+上述点了“中”之后，会出现界面风格设定，选中你喜欢的颜色。
 
-更多小狼毫的字体、配色方案参考 [官方配置指南--小狼毫](https://github.com/rime/home/wiki/CustomizationGuide#一例定制小狼毫字体字号)
+![](https://www.fkxxyz.com/img/weasel-6.png)
+
+这些设定完成后，会进行自动部署，需要等待半分钟左右，就可以使用了。
+
+更多修改小狼毫的字体、配色方案参考 [官方配置指南--小狼毫](https://github.com/rime/home/wiki/CustomizationGuide#一例定制小狼毫字体字号)
 
 > ### 一例、定制【小狼毫】字体字号
 >
@@ -224,8 +253,8 @@ patch:
 > # weasel.custom.yaml
 > 
 > patch:
->   "style/font_face": "明兰"  # 字体名称，从记事本等处的系统字体对话框里能看到
->   "style/font_point": 14     # 字号，只认数字的，不认「五号」、「小五」这样的
+>     "style/font_face": "明兰"  # 字体名称，从记事本等处的系统字体对话框里能看到
+>     "style/font_point": 14     # 字号，只认数字的，不认「五号」、「小五」这样的
 > ```
 >
 > ### 一例、定制【小狼毫】配色方案
@@ -236,18 +265,18 @@ patch:
 > # weasel.custom.yaml
 > 
 > patch:
->   "style/color_scheme": starcraft    # 这项用于选中下面定义的新方案
->   "preset_color_schemes/starcraft":  # 在配色方案列表里加入标识为 starcraft 的新方案
->     name: 星际我争霸／StarCraft
->     author: Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment
->     text_color: 0xccaa88             # 编码行文字颜色，24位色值，用十六进制书写方便些，顺序是蓝绿红0xBBGGRR
->     candidate_text_color: 0x30bb55   # 候选项文字颜色，当与文字颜色不同时指定
->     back_color: 0x000000             # 底色
->     border_color: 0x1010a0           # 边框颜色，与底色相同则为无边框的效果
->     hilited_text_color: 0xfecb96     # 高亮文字，即与当前高亮候选对应的那部份输入码
->     hilited_back_color: 0x000000     # 设定高亮文字的底色，可起到凸显高亮部份的作用
->     hilited_candidate_text_color: 0x60ffa8  # 高亮候选项的文字颜色，要醒目！
->     hilited_candidate_back_color: 0x000000  # 高亮候选项的底色，若与背景色不同就会显出光棒
+>     "style/color_scheme": starcraft    # 这项用于选中下面定义的新方案
+>     "preset_color_schemes/starcraft":  # 在配色方案列表里加入标识为 starcraft 的新方案
+>       name: 星际我争霸／StarCraft
+>       author: Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment
+>       text_color: 0xccaa88             # 编码行文字颜色，24位色值，用十六进制书写方便些，顺序是蓝绿红0xBBGGRR
+>       candidate_text_color: 0x30bb55   # 候选项文字颜色，当与文字颜色不同时指定
+>       back_color: 0x000000             # 底色
+>       border_color: 0x1010a0           # 边框颜色，与底色相同则为无边框的效果
+>       hilited_text_color: 0xfecb96     # 高亮文字，即与当前高亮候选对应的那部份输入码
+>       hilited_back_color: 0x000000     # 设定高亮文字的底色，可起到凸显高亮部份的作用
+>       hilited_candidate_text_color: 0x60ffa8  # 高亮候选项的文字颜色，要醒目！
+>       hilited_candidate_back_color: 0x000000  # 高亮候选项的底色，若与背景色不同就会显出光棒
 > ```
 >
 > 效果自己看！
@@ -283,10 +312,18 @@ patch:
 > ```
 > # weasel.custom.yaml
 > patch:
->   style/horizontal: true      # 候选横排
->   style/inline_preedit: true  # 内嵌编码（仅支持TSF）
->   style/display_tray_icon: true  # 显示托盘图标
+>     style/horizontal: true      # 候选横排
+>     style/inline_preedit: true  # 内嵌编码（仅支持TSF）
+>     style/display_tray_icon: true  # 显示托盘图标
 > ```
+
+只需要将   style/horizontal: true  这一行添加到 patch: 后面即可，注意前面有两个空格，不能多也不能少，如下图所示
+
+![](https://www.fkxxyz.com/img/weasel-7.png)
+
+然后重新部署
+
+![](https://www.fkxxyz.com/img/weasel-8.png)
 
 修改配置文件时要格外[注意](#基本配置)
 
