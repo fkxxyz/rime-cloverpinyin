@@ -267,7 +267,7 @@ patch:
 > patch:
 >   "style/color_scheme": starcraft    # 这项用于选中下面定义的新方案
 >   "preset_color_schemes/starcraft":  # 在配色方案列表里加入标识为 starcraft 的新方案
->   name: 星际我争霸／StarCraft
+>     name: 星际我争霸／StarCraft
 >     author: Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment
 >     text_color: 0xccaa88             # 编码行文字颜色，24位色值，用十六进制书写方便些，顺序是蓝绿红0xBBGGRR
 >     candidate_text_color: 0x30bb55   # 候选项文字颜色，当与文字颜色不同时指定
