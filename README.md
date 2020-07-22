@@ -160,7 +160,7 @@ pacman -S fcitx-rime
 在 archlinux 下，可以从 [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 直接安装即可：
 
 ```shell
-yay -S fcitx-cloverpinyin
+yay -S rime-cloverpinyin
 ```
 
 在其它发行版下，来发布页 https://github.com/fkxxyz/rime-cloverpinyin/releases 或 https://fkxxyz.lanzous.com/b00zl958j 下载最新版本的配置文件，如 clover.schema-1.1.0.zip
