@@ -329,7 +329,7 @@ patch:
 
 ### 关于发布页
 
-由于 rime 处理词库的原理是提前将词库转换为二进制文件，这个过程成为部署，所以我在[发布页](https://github.com/fkxxyz/rime-cloverpinyin/releases)提供了两个压缩包，一个包含二进制文件，一个不包含二进制文件。
+由于 rime 处理词库的原理是提前将词库转换为二进制文件，这个过程被称为部署，所以我在[发布页](https://github.com/fkxxyz/rime-cloverpinyin/releases)提供了两个压缩包，一个包含二进制文件，一个不包含二进制文件。
 
 - **clover.schema** 不包含二进制文件，复制到新机器上之后需要重新部署。
 - **clover.schema-build** 包含二进制文件目录（build目录），复制到新机器上之后重新部署的时间大量缩短。
