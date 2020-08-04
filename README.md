@@ -55,10 +55,10 @@
 
 安装说明已迁移到本项目的 wiki，详见：
 
-[安装说明](/fkxxyz/rime-cloverpinyin/wiki/Home)
+[安装说明](https://github.com/fkxxyz/rime-cloverpinyin/wiki/Home)
 
-- [在 Windows 下使用](/fkxxyz/rime-cloverpinyin/wiki/windows)
-- [在 Linux 下使用](/fkxxyz/rime-cloverpinyin/wiki/linux)
+- [在 Windows 下使用](https://github.com/fkxxyz/rime-cloverpinyin/wiki/windows)
+- [在 Linux 下使用](https://github.com/fkxxyz/rime-cloverpinyin/wiki/linux)
 
 ## 从本仓库源码构建
 
