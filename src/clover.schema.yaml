@@ -40,7 +40,6 @@ switches:
 engine:
   processors:
     - ascii_composer
-    - recognizer
     - key_binder
     - speller
     - punctuator
@@ -106,7 +105,6 @@ speller:
 
 translator:
   dictionary: clover
-  candidate_sort_by: 1
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
@@ -137,6 +135,7 @@ punctuator:
     "}": "｝"
     "|": "｜"
     "\\": "、"
+    "/": "、"
     ";": "；"
     "'": "‘"
     ",": "，"
@@ -167,6 +166,7 @@ punctuator:
     "}": "｝"
     "|": "｜"
     "\\": "、"
+    "/": "、"
     ";": "；"
     "'": "’"
     ",": "，"
@@ -187,14 +187,6 @@ key_binder:
       - clover.key_bindings:/numbered_mode_switch   # Ctrl+Shift+数字 切换开关
       - clover.key_bindings:/windows_compatible_mode_switch   # Windows 兼容
       - clover.key_bindings:/kp_enter_is_return   # 小键盘回车设为普通回车
-
-recognizer:
-  import_preset: default
-  patterns:
-    # hack: to enable "/fh" style symbols, '/' must be mapped to a [list].
-    # so those who have customized '/' for direct commit won't be affected by
-    # this change.
-    punct: "^/([0-9]+[a-z]*|[a-z]+)$"
 
 ascii_composer:
   import_preset: default
