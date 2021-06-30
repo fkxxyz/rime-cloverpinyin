@@ -971,7 +971,7 @@ sort: by_weight
 法餐	fa can	1864
 卡拉胶	ka la jiao	1855
 乳铁蛋白	ru tie dan bai	1854
-库尔勒香梨	ku er lei xiang li	1850
+库尔勒香梨	ku er le xiang li	1850
 虾饼	xia bing	1838
 山东菜	shan dong cai	1835
 氢氧化钙	qing yang hua gai	1827
@@ -1095,7 +1095,7 @@ sort: by_weight
 三花酒	san hua jiu	1437
 小米饭	xiao mi fan	1433
 越桔	yue ju	1431
-森参	sen can	1430
+森参	sen shen	1430
 木瓜蛋白酶	mu gua dan bai mei	1429
 夏威夷果	xia wei yi guo	1425
 鸡仔饼	ji zai bing	1420
@@ -2999,7 +2999,7 @@ sort: by_weight
 杨家吊炉饼	yang jia diao lu bing	103
 麦德乐	mai de le	103
 苔菜小方烤	tai cai xiao fang kao	103
-参花茶	can hua cha	103
+参花茶	shen hua cha	103
 叉烧鸡	cha shao ji	103
 芒果芝士蛋糕	mang guo zhi shi dan gao	103
 扒驼掌	ba tuo zhang	103
@@ -3832,7 +3832,7 @@ sort: by_weight
 椒盐桃片	jiao yan tao pian	48
 南瓜团子	nan gua tuan zi	48
 玉米粒罐头	yu mi li guan tou	48
-花旗参炖竹丝鸡	hua qi can dun zhu si ji	48
+花旗参炖竹丝鸡	hua qi shen dun zhu si ji	48
 三丝凉面	san si liang mian	48
 格林斯通	ge lin si tong	48
 椰汁西米糕	ye zhi xi mi gao	48
@@ -4256,7 +4256,7 @@ sort: by_weight
 煮凉粉	zhu liang fen	34
 烩散丹	hui san dan	34
 庄里合儿饼	zhuang li he er bing	34
-干烧辽参	gan shao liao can	34
+干烧辽参	gan shao liao shen	34
 大理饵块	da li er kuai	34
 如意回卤干	ru yi hui lu gan	34
 翡翠烧麦	fei cui shao mai	34
@@ -4824,7 +4824,7 @@ sort: by_weight
 鸳鸯鸡粥	yuan yang ji zhou	21
 炸豆腐丸子	zha dou fu wan zi	21
 清音茶	qing yin cha	21
-参麦团鱼	can mai tuan yu	21
+参麦团鱼	shen mai tuan yu	21
 白醋鸡蛋	bai cu ji dan	21
 小锅卤饵块	xiao guo lu er kuai	21
 龙虎凤烩	long hu feng hui	21
@@ -5252,7 +5252,7 @@ sort: by_weight
 鱼片蒸水蛋	yu pian zheng shui dan	16
 巴山银芽	ba shan yin ya	16
 叉烤鳜鱼	cha kao gui yu	16
-参芪母鸡汤	can qi mu ji tang	16
+参芪母鸡汤	shen qi mu ji tang	16
 九珠皮蛋	jiu zhu pi dan	16
 酸菜黑圪条	suan cai hei ge tiao	16
 银耳大枣汤	yin er da zao tang	16
@@ -5519,7 +5519,7 @@ sort: by_weight
 大麻球	da ma qiu	13
 火爆肚头	huo bao du tou	13
 珠兰大方	zhu lan da fang	13
-什香菜	shen xiang cai	13
+什香菜	shi xiang cai	13
 酸辣羹	suan la geng	13
 虾肉小笼包	xia rou xiao long bao	13
 平阴梨丸子	ping yin li wan zi	13
@@ -5730,7 +5730,7 @@ sort: by_weight
 八宝葫芦鸡	ba bao hu lu ji	11
 珊瑚桂鱼	shan hu gui yu	11
 红烧咕噜肉	hong shao gu lu rou	11
-鸡什刀削	ji shen dao xiao	11
+鸡什刀削	ji shi dao xiao	11
 天目青顶茶	tian mu qing ding cha	11
 番茄牛肉羹	fan qie niu rou geng	11
 豇豆烧肉	jiang dou shao rou	11
@@ -5866,7 +5866,7 @@ sort: by_weight
 五香仔鸽	wu xiang zai ge	10
 蚝油西兰花	hao you xi lan hua	10
 空心鱼丸汤	kong xin yu wan tang	10
-参蒸鳝段	can zheng shan duan	10
+参蒸鳝段	shen zheng shan duan	10
 苏稽米花糖	su ji mi hua tang	10
 玫瑰豆沙月饼	mei gui dou sha yue bing	10
 午餐三明治	wu can san ming zhi	10
@@ -6026,7 +6026,7 @@ sort: by_weight
 泰安三美豆腐	tai an san mei dou fu	9
 四川板鸭	si chuan ban ya	9
 椒盐八宝鸡	jiao yan ba bao ji	9
-卡拉什尼科夫伏特加	ka la shen ni ke fu fu te jia	9
+卡拉什尼科夫伏特加	ka la shi ni ke fu fu te jia	9
 宫廷排翅	gong ting pai chi	9
 马虎面	ma hu mian	9
 欧查果	ou cha guo	9
@@ -6315,7 +6315,7 @@ sort: by_weight
 干煸鳝背	gan bian shan bei	7
 薄玉茶	bao yu cha	7
 箩粉鱼头豆腐汤	luo fen yu tou dou fu tang	7
-龙眼洋参饮	long yan yang can yin	7
+龙眼洋参饮	long yan yang shen yin	7
 宝矿力饮料	bao kuang li yin liao	7
 燕禾金	yan he jin	7
 普宁面线	pu ning mian xian	7
@@ -6441,7 +6441,7 @@ sort: by_weight
 桃仁山鸡丁	tao ren shan ji ding	7
 家乐鲜露	jia le xian lu	7
 宝玉鱼唇	bao yu yu chun	7
-什锦人参果	shi jin ren shen guo	7
+什锦人参果	shi jin ren shi guo	7
 壶壶油茶	hu hu you cha	7
 金枪鱼面包	jin qiang yu mian bao	7
 咸味奶油糖	xian wei nai you tang	7
@@ -6727,7 +6727,7 @@ sort: by_weight
 詹王火腿汁	zhan wang huo tui zhi	5
 米冻蜂	mi dong feng	5
 北杏猪肺汤	bei xing zhu fei tang	5
-参芪红枣乳鸽汤	can qi hong zao ru ge tang	5
+参芪红枣乳鸽汤	shen qi hong zao ru ge tang	5
 当归百合兔	dang gui bai he tu	5
 大理雪茶	da li xue cha	5
 丁酸苄酯	ding suan bian zhi	5
@@ -7122,7 +7122,7 @@ sort: by_weight
 李派林急汁	li pai lin ji zhi	4
 萝卜氽鲫鱼	luo bo tun ji yu	4
 小稀瓜瓜	xiao xi gua gua	4
-花旗参炖水鸭	hua qi can dun shui ya	4
+花旗参炖水鸭	hua qi shen dun shui ya	4
 麻花腰子	ma hua yao zi	4
 稀珍黑米粥	xi zhen hei mi zhou	4
 冬瓜连锅汤	dong gua lian guo tang	4
@@ -7248,7 +7248,7 @@ sort: by_weight
 羊肉合面	yang rou he mian	4
 酱爆肉酥饼	jiang bao rou su bing	4
 海天上等蚝油	hai tian shang deng hao you	4
-参芪炖白凤	can qi dun bai feng	4
+参芪炖白凤	shen qi dun bai feng	4
 虾籽管廷	xia zi guan ting	4
 荷包水鱼	he bao shui yu	4
 金华馒头	jin hua man tou	4
@@ -7667,7 +7667,7 @@ sort: by_weight
 北芪瘦肉	bei qi shou rou	3
 彭州九尺板鸭	peng zhou jiu chi ban ya	3
 樊记肉加馍	fan ji rou jia mo	3
-太子参百合田鸡汤	tai zi can bai he tian ji tang	3
+太子参百合田鸡汤	tai zi shen bai he tian ji tang	3
 宫廷小窝头	gong ting xiao wo tou	3
 麻辣冬笋	ma la dong sun	3
 荷包圆子	he bao yuan zi	3
@@ -7743,7 +7743,7 @@ sort: by_weight
 蜜饯菱角	mi jian ling jiao	2
 红烧浮皮	hong shao fu pi	2
 西兰花浓汤	xi lan hua nong tang	2
-北杏参地老鸭汤	bei xing can de lao ya tang	2
+北杏参地老鸭汤	bei xing shen de lao ya tang	2
 路易歌德	lu yi ge de	2
 滨州锅子饼	bin zhou guo zi bing	2
 红枣炖梨	hong zao dun li	2
@@ -7871,7 +7871,7 @@ sort: by_weight
 迟菜心滚肉片汤	chi cai xin gun rou pian tang	2
 香肠芥兰	xiang chang jie lan	2
 一品鲳鱼	yi pin chang yu	2
-归参山药猪腰	gui can shan yao zhu yao	2
+归参山药猪腰	gui shen shan yao zhu yao	2
 八宝蛋炸食	ba bao dan zha shi	2
 奶油菠萝冻	nai you bo luo dong	2
 秘制国药中华鳖	mi zhi guo yao zhong hua bie	2
@@ -7926,7 +7926,7 @@ sort: by_weight
 发面油饼	fa mian you bing	2
 猴头蘑烩凤片	hou tou mo hui feng pian	2
 风鸡斩肉	feng ji zhan rou	2
-蛤什蟆汤	ha shen ma tang	2
+蛤什蟆汤	ha shi ma tang	2
 稻香春南味食品	dao xiang chun nan wei shi pin	2
 银芽韭菜花	yin ya jiu cai hua	2
 小茶糕	xiao cha gao	2
@@ -8027,7 +8027,7 @@ sort: by_weight
 酱烧冬瓜条	jiang shao dong gua tiao	2
 虎皮香肉	hu pi xiang rou	2
 双仁浮皮	shuang ren fu pi	2
-洋参雪耳炖燕窝	yang can xue er dun yan wo	2
+洋参雪耳炖燕窝	yang shen xue er dun yan wo	2
 香油膳糊	xiang you shan hu	2
 广州白切鸡	guang zhou bai qie ji	2
 南通甜包瓜	nan tong tian bao gua	2
@@ -8088,7 +8088,7 @@ sort: by_weight
 脆青梅	cui qing mei	2
 白汁菜心	bai zhi cai xin	2
 赤小豆粟米须生鱼汤	chi xiao dou su mi xu sheng yu tang	2
-太子参无花果瘦肉汤	tai zi can wu hua guo shou rou tang	2
+太子参无花果瘦肉汤	tai zi shen wu hua guo shou rou tang	2
 面筋萨其马	mian jin sa qi ma	2
 大蛋散	da dan san	2
 原盅炖北菇	yuan zhong dun bei gu	2
@@ -8318,7 +8318,7 @@ sort: by_weight
 徽州园子	hui zhou yuan zi	1
 泡椒蒸水鱼	pao jiao zheng shui yu	1
 凤凰鱼肚	feng huang yu du	1
-什大酥烧饼	shen da su shao bing	1
+什大酥烧饼	shi da su shao bing	1
 醒脑安神冬瓜汤	xing nao an shen dong gua tang	1
 炒螺丝面	chao luo si mian	1
 十二烷基二甲基溴化铵	shi er wan ji er jia ji xiu hua an	1
@@ -8369,7 +8369,7 @@ sort: by_weight
 温酒醉虾	wen jiu zui xia	1
 冰汁杏淖	bing zhi xing nao	1
 新都姜糖	xin dou jiang tang	1
-炒鸡什件	chao ji shen jian	1
+炒鸡什件	chao ji shi jian	1
 酱香萝卜皮	jiang xiang luo bo pi	1
 桔花晶	ju hua jing	1
 统管糖	tong guan tang	1
@@ -8719,7 +8719,7 @@ sort: by_weight
 聪喝识	cong he shi	1
 乾州鸡面	qian zhou ji mian	1
 蜜佛手	mi fo shou	1
-参果炖瘦肉	can guo dun shou rou	1
+参果炖瘦肉	shen guo dun shou rou	1
 豆豉剁辣椒	dou chi duo la jiao	1
 酥皮芋蓉盅	su pi yu rong zhong	1
 果酱白蜂糕	guo jiang bai feng gao	1
@@ -8768,7 +8768,7 @@ sort: by_weight
 八宝甜粽	ba bao tian zong	1
 生煎肉包	sheng jian rou bao	1
 奶油条酥	nai you tiao su	1
-冬菇虫草炖鲍参	dong gu chong cao dun bao can	1
+冬菇虫草炖鲍参	dong gu chong cao dun bao shen	1
 烤薄脆	kao bao cui	1
 怪味果仁	guai wei guo ren	1
 姜汁拌菠菜	jiang zhi ban bo cai	1
@@ -8781,7 +8781,7 @@ sort: by_weight
 清炖姜归羊肉汤	qing dun jiang gui yang rou tang	1
 糌粑粥	zan ba zhou	1
 咖喱樱桃	ga li ying tao	1
-参婆千子	can po qian zi	1
+参婆千子	shen po qian zi	1
 古县蕨菜	gu xian jue cai	1
 樱桃酒咖啡	ying tao jiu ka fei	1
 淳安猕猴桃	chun an mi hou tao	1
@@ -8841,7 +8841,7 @@ sort: by_weight
 拔丝桔子	ba si ju zi	1
 香菠血糯饭	xiang bo xue nuo fan	1
 吊炉饼鸡蛋羹	diao lu bing ji dan geng	1
-参麦雪梨瘦肉汤	can mai xue li shou rou tang	1
+参麦雪梨瘦肉汤	shen mai xue li shou rou tang	1
 火腿萝卜丝汤	huo tui luo bo si tang	1
 黑玉米饮料	hei yu mi yin liao	1
 香煎黄糕粑	xiang jian huang gao ba	1

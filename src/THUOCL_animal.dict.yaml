@@ -52,7 +52,7 @@ sort: by_weight
 家鸡	jia ji	6433
 河蚌	he bang	6090
 全蝎	quan xie	6068
-刺参	ci can	5577
+刺参	ci shen	5577
 灵长类动物	ling zhang lei dong wu	5575
 鹮	huan	5069
 囊虫	nang chong	4996
@@ -266,7 +266,7 @@ sort: by_weight
 胃毒作用	wei du zuo yong	506
 英国斗牛犬	ying guo dou niu quan	505
 雄蚕蛾	xiong can e	504
-海刺参	hai ci can	503
+海刺参	hai ci shen	503
 茺蔚子	chong wei zi	502
 俞君英	yu jun ying	499
 小杜鹃	xiao du juan	493
@@ -325,7 +325,7 @@ sort: by_weight
 鸻	heng	370
 全虾	quan xia	366
 高效氯氰菊酯	gao xiao lv qing ju zhi	365
-拳参	quan can	364
+拳参	quan shen	364
 占有面积	zhan you mian ji	364
 小膜	xiao mo	361
 蠪侄	long zhi	357
@@ -770,7 +770,7 @@ sort: by_weight
 扎硬寨	zha ying zhai	72
 霍加狓	huo jia pi	72
 响导蝗虫	xiang dao huang chong	72
-刺参科	ci can ke	72
+刺参科	ci shen ke	72
 瑇瑁	dai mao	72
 大约克猪	da yue ke zhu	72
 寄蝇	ji ying	72
@@ -862,7 +862,7 @@ sort: by_weight
 红血蓝眼鸽	hong xue lan yan ge	56
 晚期猿人	wan qi yuan ren	55
 彭布罗克威尔士柯基	peng bu luo ke wei er shi ke ji	55
-参环毛蚓	can huan mao yin	55
+参环毛蚓	shen huan mao yin	55
 樟脑磺酸钠	zhang nao huang suan na	55
 角蝉	jiao chan	55
 牛尾鱼	niu wei yu	55
@@ -1016,7 +1016,7 @@ sort: by_weight
 家畜寄生虫病	jia chu ji sheng chong bing	37
 被囊动物	bei nang dong wu	37
 桃花水母属	tao hua shui mu shu	37
-猪婆参	zhu po can	37
+猪婆参	zhu po shen	37
 欧洲短毛猫	ou zhou duan mao mao	37
 浓缩海水	nong suo hai shui	37
 口腔毛滴虫	kou qiang mao di chong	37
@@ -1158,7 +1158,7 @@ sort: by_weight
 萨摩耶狗	sa mo ye gou	27
 燕子鸽	yan zi ge	27
 影子虫	ying zi chong	27
-灰刺参	hui ci can	27
+灰刺参	hui ci shen	27
 扇贝科	shan bei ke	27
 犬复孔绦虫	quan fu kong tao chong	27
 中国犀牛	zhong guo xi niu	27
@@ -1565,7 +1565,7 @@ sort: by_weight
 欧夜鹰	ou ye ying	14
 矛尾复虾虎鱼	mao wei fu xia hu yu	14
 挪威猎鹿犬	nuo wei lie lu quan	14
-勒车犬	lei che quan	14
+勒车犬	le che quan	14
 纽形动物门	niu xing dong wu men	14
 漂浮生物	piao fu sheng wu	14
 盐车前子	yan che qian zi	14
@@ -1658,7 +1658,7 @@ sort: by_weight
 魏玛猎犬	wei ma lie quan	12
 鱂鱼	jiang yu	12
 新几内亚鲈鱼	xin ji nei ya lu yu	12
-牛手参	niu shou can	12
+牛手参	niu shou shen	12
 迪威詹森	di wei zhan sen	12
 千叶灵芝	qian ye ling zhi	12
 改良小尾寒羊	gai liang xiao wei han yang	12
@@ -1711,7 +1711,7 @@ sort: by_weight
 溪畔杜鹃	xi pan du juan	11
 卡迪根威尔士柯基犬	ka di gen wei er shi ke ji quan	11
 药蟹	yao xie	11
-无眼希特勒	wu yan xi te lei	11
+无眼希特勒	wu yan xi te le	11
 巴切尔热带草原斑马	ba qie er re dai cao yuan ban ma	11
 浮游甲壳动物	fu you jia qiao dong wu	11
 黄岛长吻虫	huang dao zhang wen chong	11
@@ -1733,13 +1733,13 @@ sort: by_weight
 硬尾鸭	ying wei ya	10
 远东树莺	yuan dong shu ying	10
 佩恰	pei qia	10
-仿刺参	fang ci can	10
+仿刺参	fang ci shen	10
 驻马店正虹	zhu ma dian zheng hong	10
 裸眼凤头鹦鹉	luo yan feng tou ying wu	10
 墨脱缺翅虫	mo tuo que chi chong	10
 日本黑牛	ri ben hei niu	10
 中国环颈雉鸡	zhong guo huan jing zhi ji	10
-诺弗勒恶龙	nuo fu lei e long	10
+诺弗勒恶龙	nuo fu le e long	10
 东方毛圆线虫	dong fang mao yuan xian chong	10
 绿草履虫	lv cao lv chong	10
 得克萨斯龙	de ke sa si long	10
@@ -2172,7 +2172,7 @@ sort: by_weight
 蛎敌荔枝螺	li di li zhi luo	5
 黄粉虫虫种	huang fen chong chong zhong	5
 糯谷猪	nuo gu zhu	5
-花叶勒杜鹃	hua ye lei du juan	5
+花叶勒杜鹃	hua ye le du juan	5
 长毛蟹	chang mao xie	5
 竞争排除原理	jing zheng pai chu yuan li	5
 敬钊缨毛蛛	jing zhao ying mao zhu	5
@@ -2207,7 +2207,7 @@ sort: by_weight
 恐角兽	kong jiao shou	5
 德国美利奴羊	de guo mei li nu yang	5
 南部锦龟	nan bu jin gui	5
-塔什库尔干大尾羊	ta shen ku er gan da wei yang	5
+塔什库尔干大尾羊	ta shi ku er gan da wei yang	5
 裸背电鳗目	luo bei dian man mu	5
 黄肥尾蝎	huang fei wei xie	5
 黄鶺鴒	huang ji ling	5
@@ -2444,7 +2444,7 @@ sort: by_weight
 鳞尾鼯鼠科	lin wei wu shu ke	3
 去皮豆粕	qu pi dou po	3
 泛农花猪	fan nong hua zhu	3
-牟勒氏幼虫	mou lei shi you chong	3
+牟勒氏幼虫	mou le shi you chong	3
 粗毛柯利牧羊犬	cu mao ke li mu yang quan	3
 星点东方鲀	xing dian dong fang tun	3
 鱼舲	yu ling	3
@@ -2577,7 +2577,7 @@ sort: by_weight
 奥杜邦长腿冠鹰	ao du bang zhang tui guan ying	3
 栎旋木柄天牛	li xuan mu bing tian niu	3
 机会致病寄生虫	ji hui zhi bing ji sheng chong	3
-白底辐肛参	bai di fu gang can	3
+白底辐肛参	bai di fu gang shen	3
 夜行虎	ye xing hu	3
 截尾犬	jie wei quan	3
 米切尔眼蝶	mi qie er yan die	3
@@ -2633,7 +2633,7 @@ sort: by_weight
 茅鼠	mao shu	2
 淮北兴农	huai bei xing nong	2
 颈围鸽	jing wei ge	2
-裸五角瓜参	luo wu jiao gua can	2
+裸五角瓜参	luo wu jiao gua shen	2
 日本小鼯鼠	ri ben xiao wu shu	2
 克罗斯河大猩猩	ke luo si he da xing xing	2
 关公蟹属	guan gong xie shu	2
@@ -2816,7 +2816,7 @@ sort: by_weight
 蓝瓶僧帽水母	lan ping seng mao shui mu	2
 冈比亚有袋鼠	gang bi ya you dai shu	2
 日本关公蟹	ri ben guan gong xie	2
-梅勒营鹦鹉嘴龙	mei lei ying ying wu zui long	2
+梅勒营鹦鹉嘴龙	mei le ying ying wu zui long	2
 蓝战狗	lan zhan gou	2
 鹮嘴鹬	huan zui yu	2
 比利时拉坎诺斯牧羊犬	bi li shi la kan nuo si mu yang quan	2
@@ -3025,7 +3025,7 @@ sort: by_weight
 红头帽子金鱼	hong tou mao zi jin yu	1
 驼背躄鱼	tuo bei bi yu	1
 金枪头洞蛇	jin qiang tou dong she	1
-斯泰勒海牛	si tai lei hai niu	1
+斯泰勒海牛	si tai le hai niu	1
 印加无毛犬	yin jia wu mao quan	1
 褐斑背角花金龟	he ban bei jiao hua jin gui	1
 毛野丁香叶	mao ye ding xiang ye	1
@@ -3270,14 +3270,14 @@ sort: by_weight
 三疣梭子蟹壳	san you suo zi xie ke	1
 野核桃声毛管蚜	ye he tao sheng mao guan ya	1
 叶麋	ye mi	1
-兰开夏赫勒犬	lan kai xia he lei quan	1
+兰开夏赫勒犬	lan kai xia he le quan	1
 摩鹿加冢雉	mo lu jia zhong zhi	1
 潜鸟目	qian niao mu	1
 里海狼	li hai lang	1
 长卷毛猎犬	chang juan mao lie quan	1
 古大狐猴	gu da hu hou	1
 山溪后棱蛇	shan xi hou leng she	1
-灰蛇锚参	hui she mao can	1
+灰蛇锚参	hui she mao shen	1
 家蚕追寄蝇	jia can zhui ji ying	1
 食蚧双突围啮	shi jie shuang tu wei nie	1
 笑鸮	xiao xiao	1
@@ -3346,7 +3346,7 @@ sort: by_weight
 越人道上遇狗	yue ren dao shang yu gou	1
 宝山鮰鱼	bao shan hui yu	1
 洛卡龙	luo ka long	1
-黄刺参	huang ci can	1
+黄刺参	huang ci shen	1
 一点灰蝶	yi dian hui die	1
 周氏角蝉	zhou shi jiao chan	1
 角叫鸭	jiao jiao ya	1
@@ -3361,7 +3361,7 @@ sort: by_weight
 山字宽盾蝽	shan zi kuan dun chun	1
 似白鮈	shi bai ju	1
 箱鲀亚目	xiang tun ya mu	1
-芋参目	yu can mu	1
+芋参目	yu shen mu	1
 菌体蛋白粉	jun ti dan bai fen	1
 腋片	ye pian	1
 淡色杜鹃	dan se du juan	1
@@ -3595,9 +3595,9 @@ sort: by_weight
 饰翅歧须鮠	shi chi qi xu wei	0
 黑点豆娘	hei dian dou niang	0
 莫氏四极虫	mo shi si ji chong	0
-科勒氏鳅鮀	ke lei shi qiu tuo	0
+科勒氏鳅鮀	ke le shi qiu tuo	0
 帕尔默鰕虎鱼	pa er mo xia hu yu	0
-台湾步锚参	tai wan bu mao can	0
+台湾步锚参	tai wan bu mao shen	0
 卡塔利那金刚鹦鹉	ka ta li na jin gang ying wu	0
 肖盾棘蝇	xiao dun ji ying	0
 摩洛哥腔吻鳕	mo luo ge qiang wen xue	0
@@ -3855,7 +3855,7 @@ sort: by_weight
 射线裂嵴蚌	she xian lie ji bang	0
 副沙鳅锚首虫	fu sha qiu mao shou chong	0
 中华圆腹蛛	zhong hua yuan fu zhu	0
-盘形辛那参	pan xing xin na can	0
+盘形辛那参	pan xing xin na shen	0
 中缢虫蝘蜓	zhong yi chong yan ting	0
 巴哈马圆尾鬣蜥	ba ha ma yuan wei lie xi	0
 玉溪小巧溪蟹	yu xi xiao qiao xi xie	0
@@ -3959,7 +3959,7 @@ sort: by_weight
 灰斑安天牛	hui ban an tian niu	0
 眼斑宝螺	yan ban bao luo	0
 尖肢南海溪蟹	jian zhi nan hai xi xie	0
-褶锚参	zhe mao can	0
+褶锚参	zhe mao shen	0
 姬粉蝶	ji fen die	0
 星缘扇尺蛾	xing yuan shan chi e	0
 黄眉蚊霸鹟	huang mei wen ba weng	0
@@ -4360,7 +4360,7 @@ sort: by_weight
 淡黄肖叶甲	dan huang xiao ye jia	0
 樱桃介壳虫	ying tao jie ke chong	0
 新疆马歇尔线虫	xin jiang ma xie er xian chong	0
-扇形泰勒灯鱼	shan xing tai lei deng yu	0
+扇形泰勒灯鱼	shan xing tai le deng yu	0
 日本希蛛	ri ben xi zhu	0
 四川花蟹蛛	si chuan hua xie zhu	0
 兔甲鲶	tu jia nian	0
@@ -4574,7 +4574,7 @@ sort: by_weight
 里奥格兰金毛	li ao ge lan jin mao	0
 小云斑鳃金龟	xiao yun ban sai jin gui	0
 德国卷毛猫	de guo juan mao mao	0
-加勒比文昌鱼	jia lei bi wen chang yu	0
+加勒比文昌鱼	jia le bi wen chang yu	0
 卤虫属	lu chong shu	0
 鸺鹠属	xiu liu shu	0
 比加巴莱鸟	bi jia ba lai niao	0
@@ -4610,7 +4610,7 @@ sort: by_weight
 毛缘扇虾	mao yuan shan xia	0
 小刺须虎天牛	xiao ci xu hu tian niu	0
 新加利多尼亚冠毛壁虎	xin jia li duo ni ya guan mao bi hu	0
-泰勒氏磨塘鳢	tai lei shi mo tang li	0
+泰勒氏磨塘鳢	tai le shi mo tang li	0
 欧福里翁绿鸟翼凤蝶	ou fu li weng lv niao yi feng die	0
 非洲狮子猫	fei zhou shi zi mao	0
 白帝城邻外啮	bai di cheng lin wai nie	0
@@ -4677,7 +4677,7 @@ sort: by_weight
 圆果三角叶薯蓣	yuan guo san jiao ye shu yu	0
 红眼圈头盔石龙子	hong yan quan tou kui shi long zi	0
 前齿银汉鱼科	qian chi yin han yu ke	0
-长尾异赛瓜参	zhang wei yi sai gua can	0
+长尾异赛瓜参	zhang wei yi sai gua shen	0
 那加墨头鱼	na jia mo tou yu	0
 让德维尔芋螺	rang de wei er yu luo	0
 饰颈皱鹟	shi jing zhou weng	0
@@ -5054,7 +5054,7 @@ sort: by_weight
 日本肖蛸	ri ben xiao shao	0
 野生斜棘	ye sheng xie ji	0
 苏尔张口螺	su er zhang kou luo	0
-席勒猎犬	xi lei lie quan	0
+席勒猎犬	xi le lie quan	0
 白湾岛白甲鱼	bai wan dao bai jia yu	0
 小鼻绿鹦哥鱼	xiao bi lv ying ge yu	0
 鳞柄玉筋鱼	lin bing yu jin yu	0
@@ -5094,7 +5094,7 @@ sort: by_weight
 薄板胶球虫	bao ban jiao qiu chong	0
 茄黄斑螟蛾	jia huang ban ming e	0
 比阿王鹟	bi a wang weng	0
-布希勒灯笼棘鲛	bu xi lei deng long ji jiao	0
+布希勒灯笼棘鲛	bu xi le deng long ji jiao	0
 锯爪弯尾蚤	ju zhao wan wei zao	0
 牛栏爬岩鳅	niu lan pa yan qiu	0
 台湾细小翅天牛	tai wan xi xiao chi tian niu	0
@@ -5103,7 +5103,7 @@ sort: by_weight
 柳树云斑鳃金龟	liu shu yun ban sai jin gui	0
 黄带狭腹食蚜蝇	huang dai xia fu shi ya ying	0
 中国拟厚盲蝽	zhong guo ni hou mang chun	0
-考迪菲勒得迈谷犬	kao di fei lei de mai gu quan	0
+考迪菲勒得迈谷犬	kao di fei le de mai gu quan	0
 澳大利亚瓣棘鲀	ao da li ya ban ji tun	0
 白果紫草	bai guo zi cao	0
 青安纽夜蛾	qing an niu ye e	0
@@ -5990,7 +5990,7 @@ sort: by_weight
 单线刚果矮脂鲤	dan xian gang guo ai zhi li	0
 马托格罗索美洲狮	ma tuo ge luo suo mei zhou shi	0
 玫瑰副齿脂鲤	mei gui fu chi zhi li	0
-加勒比桧叶螅	jia lei bi gui ye xi	0
+加勒比桧叶螅	jia le bi gui ye xi	0
 网状菊花珊瑚	wang zhuang ju hua shan hu	0
 百慕大小鳀	bai mu da xiao ti	0
 台湾束腰蟹	tai wan shu yao xie	0
@@ -6370,7 +6370,7 @@ sort: by_weight
 浅室水母属	qian shi shui mu shu	0
 黄点副帆鳍鱼	huang dian fu fan qi yu	0
 晶莹蟳	jing ying xun	0
-史达勒克兽	shi da lei ke shou	0
+史达勒克兽	shi da le ke shou	0
 驭龙者潜水小蜂	yu long zhe qian shui xiao feng	0
 梨虎象甲	li hu xiang jia	0
 印度腹囊海龙	yin du fu nang hai long	0
@@ -6503,7 +6503,7 @@ sort: by_weight
 台湾小鳊鱼	tai wan xiao bian yu	0
 盈江条鳅	ying jiang tiao qiu	0
 黄常室茧蜂	huang chang shi jian feng	0
-强壮幽灵参	qiang zhuang you ling can	0
+强壮幽灵参	qiang zhuang you ling shen	0
 似鱎	shi jiao	0
 褐圆吻猫鲨	he yuan wen mao sha	0
 夕阳笔螺	xi yang bi luo	0
@@ -6533,7 +6533,7 @@ sort: by_weight
 黑缘角胸肖叶甲	hei yuan jiao xiong xiao ye jia	0
 迷你大四眼宝螺	mi ni da si yan bao luo	0
 奕波岬丝蚓	yi bo jia si yin	0
-摩氏渊游参	mo shi yuan you can	0
+摩氏渊游参	mo shi yuan you shen	0
 黑眉天牛	hei mei tian niu	0
 西印度树鸭	xi yin du shu ya	0
 橘黄小盾沫蝉	ju huang xiao dun mo chan	0
@@ -6610,7 +6610,7 @@ sort: by_weight
 黑喉雀鹀	hei hou que wu	0
 栅床杜父鱼	zha chuang du fu yu	0
 驯鹿尾	xun lu wei	0
-加勒比拳螺	jia lei bi quan luo	0
+加勒比拳螺	jia le bi quan luo	0
 眼点短吻狮子鱼	yan dian duan wen shi zi yu	0
 粉蝶敌蛾	fen die di e	0
 希利麦哲伦芋螺	xi li mai zhe lun yu luo	0
@@ -6769,7 +6769,7 @@ sort: by_weight
 直腹足亚纲	zhi fu zu ya gang	0
 史家沟岘山龙	shi jia gou xian shan long	0
 日本臀纹粉蚧	ri ben tun wen fen jie	0
-暗色刺参	an se ci can	0
+暗色刺参	an se ci shen	0
 嵴颊红娘鱼	ji jia hong niang yu	0
 黑尾小沙丁鱼	hei wei xiao sha ding yu	0
 梦幻鬼鱼	meng huan gui yu	0
@@ -6871,13 +6871,13 @@ sort: by_weight
 黑背显盾瓢虫	hei bei xian dun piao chong	0
 烟草木叶蝉	yan cao mu ye chan	0
 窄吻腔吻鱈	zhai wen qiang wen xue	0
-科斯勒宝螺	ke si lei bao luo	0
+科斯勒宝螺	ke si le bao luo	0
 亚东雅非洲脂鲤	ya dong ya fei zhou zhi li	0
 广腹同缘蝽	guang fu tong yuan chun	0
 新海拉无须魮	xin hai la wu xu pi	0
 中华亚宽鞘茧蜂	zhong hua ya kuan qiao jian feng	0
 侏鸊鷉	zhu pi ti	0
-加勒比短吻长尾鳕	jia lei bi duan wen zhang wei xue	0
+加勒比短吻长尾鳕	jia le bi duan wen zhang wei xue	0
 躄鱼亚目	bi yu ya mu	0
 黑色羚羊长耳大野兔	hei se ling yang zhang er da ye tu	0
 白眉地霸鹟	bai mei de ba weng	0
@@ -7597,7 +7597,7 @@ sort: by_weight
 繸瓣拟鮟鱇	sui ban ni an kang	0
 短爪裸背寄蝇	duan zhao luo bei ji ying	0
 尾饰四点双边鱼	wei shi si dian shuang bian yu	0
-菲勒灯鳉	fei lei deng jiang	0
+菲勒灯鳉	fei le deng jiang	0
 湄公河圆唇鱼	mei gong he yuan chun yu	0
 污光尺蛾	wu guang chi e	0
 澳大利亚细尾海马	ao da li ya xi wei hai ma	0
@@ -7986,7 +7986,7 @@ sort: by_weight
 日本条露螽	ri ben tiao lu zhong	0
 提环蛱蝶	ti huan jia die	0
 膜袋虫属	mo dai chong shu	0
-子安辐肛参	zi an fu gang can	0
+子安辐肛参	zi an fu gang shen	0
 岷答那骨螺	min da na gu luo	0
 忠狗德拉姆	zhong gou de la mu	0
 思茅台龟甲	si mao tai gui jia	0
@@ -8677,7 +8677,7 @@ sort: by_weight
 敌蛾科	di e ke	0
 潜伏指环虫	qian fu zhi huan chong	0
 稻毛虫花茧姬蜂	dao mao chong hua jian ji feng	0
-勒非副克奈氏鱼	lei fei fu ke nai shi yu	0
+勒非副克奈氏鱼	le fei fu ke nai shi yu	0
 尾足螨亚目	wei zu man ya mu	0
 瓜蔓颅沟饰冠小蠹	gua wan lu gou shi guan xiao du	0
 西澳光尾海龙	xi ao guang wei hai long	0
@@ -9045,7 +9045,7 @@ sort: by_weight
 台湾沟鰕虎鱼	tai wan gou xia hu yu	0
 粗糙酋妇蟹	cu cao qiu fu xie	0
 白參渦螺	bai can wo luo	0
-加勒比九棘鲈	jia lei bi jiu ji lu	0
+加勒比九棘鲈	jia le bi jiu ji lu	0
 切翅单眼蛇目蝶	qie chi dan yan she mu die	0
 鳍尾梦角鮟鱇	qi wei meng jiao an kang	0
 中国华绿露螽	zhong guo hua lv lu zhong	0
@@ -9393,7 +9393,7 @@ sort: by_weight
 台湾环帘蛤	tai wan huan lian ha	0
 褐杂鳞杜父鱼	he za lin du fu yu	0
 南亚多棱圆鲱	nan ya duo leng yuan fei	0
-勒氏强棘杜父鱼	lei shi qiang ji du fu yu	0
+勒氏强棘杜父鱼	le shi qiang ji du fu yu	0
 光耀双鳍鰕鳉	guang yao shuang qi xia jiang	0
 秘鲁燕鸥	bi lu yan ou	0
 萤点石斑鱼	ying dian shi ban yu	0
@@ -9724,7 +9724,7 @@ sort: by_weight
 皱脊扁蝽	zhou ji bian chun	0
 犬牙刺盖鰕虎鱼	quan ya ci gai xia hu yu	0
 西澳扁魟	xi ao bian hong	0
-加勒比斜锯牙鲨	jia lei bi xie ju ya sha	0
+加勒比斜锯牙鲨	jia le bi xie ju ya sha	0
 云斑圆蜻	yun ban yuan qing	0
 萨切橙口榧螺	sa qie cheng kou fei luo	0
 邻纹唇盲蝽	lin wen chun mang chun	0
@@ -9774,7 +9774,7 @@ sort: by_weight
 山楂天幕毛虫	shan zha tian mu mao chong	0
 小翠夜蛾	xiao cui ye e	0
 大肚花鹿宝螺	da du hua lu bao luo	0
-加勒比拟霸鹟	jia lei bi ni ba weng	0
+加勒比拟霸鹟	jia le bi ni ba weng	0
 辉黑裳凤蝶	hui hei shang feng die	0
 红斑游船水母	hong ban you chuan shui mu	0
 史前巨蚯蚓	shi qian ju qiu yin	0
@@ -9863,7 +9863,7 @@ sort: by_weight
 模里西斯宝螺	mo li xi si bao luo	0
 埃塞俄比亚爱情鸟	ai sai e bi ya ai qing niao	0
 蓝燕尾鮗	lan yan wei dong	0
-毛参管盘虫	mao can guan pan chong	0
+毛参管盘虫	mao shen guan pan chong	0
 长足摇蚊	chang zu yao wen	0
 内饰简变虫	nei shi jian bian chong	0
 长尾异饰肛螽	zhang wei yi shi gang zhong	0
@@ -9930,7 +9930,7 @@ sort: by_weight
 南城华南溪蟹	nan cheng hua nan xi xie	0
 曲纹稻弄蝶	qu wen dao nong die	0
 滇黔石蝴蝶	dian qian shi hu die	0
-加勒比日本康吉鳗	jia lei bi ri ben kang ji man	0
+加勒比日本康吉鳗	jia le bi ri ben kang ji man	0
 触角沟鰕虎鱼	chu jiao gou xia hu yu	0
 肖褐带东灯蛾	xiao he dai dong deng e	0
 台湾准盲鳗	tai wan zhun mang man	0
@@ -10072,7 +10072,7 @@ sort: by_weight
 楯魮	dun pi	0
 圆拟灯蛾	yuan ni deng e	0
 紫背苇鳱	zi bei wei gan	0
-阿滕伯勒长喙针鼹鼠	a teng bo lei zhang hui zhen yan shu	0
+阿滕伯勒长喙针鼹鼠	a teng bo le zhang hui zhen yan shu	0
 巴拉圭异仙女虫	ba la gui yi xian nv chong	0
 裂斑鹰翅天蛾	lie ban ying chi tian e	0
 齿缘刺猎椿象	chi yuan ci lie chun xiang	0
@@ -10120,7 +10120,7 @@ sort: by_weight
 摩氏光体鮠	mo shi guang ti wei	0
 长棘钝顶鮋	zhang ji dun ding you	0
 穆尔登岛鲾	mu er deng dao bi	0
-加勒比长鳍鳓	jia lei bi zhang qi le	0
+加勒比长鳍鳓	jia le bi zhang qi le	0
 甘薯田斜纹夜蛾	gan shu tian xie wen ye e	0
 魔小鲉	mo xiao you	0
 莫哈骨尾鱼	mo ha gu wei yu	0
@@ -10405,7 +10405,7 @@ sort: by_weight
 夏威夷红花宝螺	xia wei yi hong hua bao luo	0
 白嘴端凤头燕鸥	bai zui duan feng tou yan ou	0
 钢钢巴丹	gang gang ba dan	0
-俄勒冈叶唇鱼	e lei gang ye chun yu	0
+俄勒冈叶唇鱼	e le gang ye chun yu	0
 千佛洞陆龟	qian fu dong lu gui	0
 金絲岩螺	jin si yan luo	0
 花腋鳞头鮋	hua ye lin tou you	0
@@ -11046,7 +11046,7 @@ sort: by_weight
 树形笔石目	shu xing bi shi mu	0
 犬鸟虱	quan niao shi	0
 圆吻星鱵	yuan wen xing zhen	0
-灰揭囊皮参	hui jie nang pi can	0
+灰揭囊皮参	hui jie nang pi shen	0
 埔里华吸鳅	pu li hua xi qiu	0
 褐駝海膽	he tuo hai dan	0
 黄尾副刺尾鱼	huang wei fu ci wei yu	0
@@ -11150,7 +11150,7 @@ sort: by_weight
 委内瑞拉夜鹰	wei nei rui la ye ying	0
 绛斑榧螺	jiang ban fei luo	0
 残齿胫甲	can chi jing jia	0
-迪布勒伊洛龙	di bu lei yi luo long	0
+迪布勒伊洛龙	di bu le yi luo long	0
 一串红大造桥虫	yi chuan hong da zao qiao chong	0
 古巴鸺鹠	gu ba xiu liu	0
 农神龙	nong shen long	0
@@ -11169,7 +11169,7 @@ sort: by_weight
 小跃蝗	xiao yue huang	0
 台湾金星尺蛾	tai wan jin xing chi e	0
 刺蝟花仙螺	ci wei hua xian luo	0
-元参棘趾野螟	yuan can ji zhi ye ming	0
+元参棘趾野螟	yuan shen ji zhi ye ming	0
 胸带刺盖鱼	xiong dai ci gai yu	0
 十二梭海绵髓星虫	shi er suo hai mian sui xing chong	0
 半圆广翅小卷蛾	ban yuan guang chi xiao juan e	0
@@ -11187,7 +11187,7 @@ sort: by_weight
 橘盲盾异蝽	ju mang dun yi chun	0
 黄斑蟾蜍	huang ban chan chu	0
 角海棘水母	jiao hai ji shui mu	0
-缪勒海樽克氏亚钟	mou lei hai zun ke shi ya zhong	0
+缪勒海樽克氏亚钟	mou le hai zun ke shi ya zhong	0
 斑尾蚁鵙	ban wei yi ju	0
 郁金香蓟马	yu jin xiang ji ma	0
 卢氏扁鼻丽鱼	lu shi bian bi li yu	0
@@ -11302,7 +11302,7 @@ sort: by_weight
 五指树丽盲蝽	wu zhi shu li mang chun	0
 前双斑游地甲	qian shuang ban you de jia	0
 蝎子守宫	xie zi shou gong	0
-伪指刺锚参	wei zhi ci mao can	0
+伪指刺锚参	wei zhi ci mao shen	0
 弯脊秃角蝉	wan ji tu jiao chan	0
 台湾九刺鮨	tai wan jiu ci yi	0
 脓海鞘	nong hai qiao	0
@@ -11329,7 +11329,7 @@ sort: by_weight
 条纹褐蝗	tiao wen he huang	0
 燕鸻科	yan heng ke	0
 哺乳浓缩	bu ru nong suo	0
-俄勒冈法螺	e lei gang fa luo	0
+俄勒冈法螺	e le gang fa luo	0
 金刚钻直径绒茧蜂	jin gang zuan zhi jing rong jian feng	0
 波兰鲁滨逊小狗	bo lan lu bin xun xiao gou	0
 黄尾蓝魔鬼鱼	huang wei lan mo gui yu	0
@@ -11531,7 +11531,7 @@ sort: by_weight
 四斑墨头鱼	si ban mo tou yu	0
 显赫墨头鱼	xian he mo tou yu	0
 中华褐弄蝶	zhong hua he nong die	0
-锚参科	mao can ke	0
+锚参科	mao shen ke	0
 眉纹冠雉	mei wen guan zhi	0
 赤犬吻蝠	chi quan wen fu	0
 诺氏拾叶雀	nuo shi shi ye que	0
@@ -11560,7 +11560,7 @@ sort: by_weight
 雅西似颈啜虫	ya xi shi jing chuai chong	0
 钝额弱棘鯻	dun e ruo ji la	0
 白芦茎珊瑚	bai lu jing shan hu	0
-莫勒波克蛙嘴夜鹰	mo lei bo ke wa zui ye ying	0
+莫勒波克蛙嘴夜鹰	mo le bo ke wa zui ye ying	0
 沈氏长方蟹	shen shi zhang fang xie	0
 斑栉角叩头虫	ban zhi jiao kou tou chong	0
 颊刺锉甲鲶	jia ci cuo jia nian	0
@@ -11592,7 +11592,7 @@ sort: by_weight
 中华木蜂	zhong hua mu feng	0
 雄性库兰达树蛙	xiong xing ku lan da shu wa	0
 显长柄茧蜂	xian zhang bing jian feng	0
-圣赫勒拿岛裳凤蝶	sheng he lei na dao shang feng die	0
+圣赫勒拿岛裳凤蝶	sheng he le na dao shang feng die	0
 四点蛹螺	si dian yong luo	0
 黑额地霸鹟	hei e de ba weng	0
 文努科维亚兽	wen nu ke wei ya shou	0
@@ -11755,7 +11755,7 @@ sort: by_weight
 白小鮣	bai xiao yin	0
 二褐带三刺角蝉	er he dai san ci jiao chan	0
 驼背短吻长尾鳕	tuo bei duan wen zhang wei xue	0
-广东芋参	guang dong yu can	0
+广东芋参	guang dong yu shen	0
 卡罗林那长尾鹦鹉	ka luo lin na zhang wei ying wu	0
 猫舌海菊蛤	mao she hai ju ha	0
 喜马拉雅聚瘤姬蜂	xi ma la ya ju liu ji feng	0
@@ -11917,7 +11917,7 @@ sort: by_weight
 塞拉芬短吻狮子鱼	sai la fen duan wen shi zi yu	0
 鞘翅目朽木甲科	qiao chi mu xiu mu jia ke	0
 似隆脊角胸肖叶甲	shi long ji jiao xiong xiao ye jia	0
-加勒比小鲉	jia lei bi xiao you	0
+加勒比小鲉	jia le bi xiao you	0
 神鹰龟属	shen ying gui shu	0
 双棘拟刺盖鰕虎鱼	shuang ji ni ci gai xia hu yu	0
 长睾似泡双吸虫	zhang gao shi pao shuang xi chong	0
@@ -12416,7 +12416,7 @@ sort: by_weight
 前节晶囊轮虫	qian jie jing nang lun chong	0
 华中白肩天蛾	hua zhong bai jian tian e	0
 姆万扎平头飞龙蜥蜴	mu wan zha ping tou fei long xi yi	0
-俄勒冈州美洲狮	e lei gang zhou mei zhou shi	0
+俄勒冈州美洲狮	e le gang zhou mei zhou shi	0
 甲磺酸丹诺沙星	jia huang suan dan nuo sha xing	0
 底诺金小蜂	di nuo jin xiao feng	0
 多鳞残臂鲆	duo lin can bi ping	0
@@ -12470,7 +12470,7 @@ sort: by_weight
 鹰状无刺鲼	ying zhuang wu ci fen	0
 围戈那蛛	wei ge na zhu	0
 小星灯鱼	xiao xing deng yu	0
-阿勒格尼山脉臭鼬	a lei ge ni shan mai chou you	0
+阿勒格尼山脉臭鼬	a le ge ni shan mai chou you	0
 贫砂锥头虫	pin sha zhui tou chong	0
 沟智兔蛤	gou zhi tu ha	0
 鲍氏薄躄鱼	bao shi bao bi yu	0
@@ -12629,7 +12629,7 @@ sort: by_weight
 印加窄嘴霸鹟	yin jia zhai zui ba weng	0
 肖喙扁蝽	xiao hui bian chun	0
 归还米虾	gui huan mi xia	0
-勒苏维斯龙属	lei su wei si long shu	0
+勒苏维斯龙属	le su wei si long shu	0
 卡狄根威尔斯柯基犬	ka di gen wei er si ke ji quan	0
 梳飞跃寄蝇	shu fei yue ji ying	0
 黄马姆	huang ma mu	0
@@ -13186,7 +13186,7 @@ sort: by_weight
 雪山横鼓蝗	xue shan heng gu huang	0
 玫胸白斑翅雀	mei xiong bai ban chi que	0
 小笠原钝塘鱧	xiao li yuan dun tang li	0
-二角赛瓜参	er jiao sai gua can	0
+二角赛瓜参	er jiao sai gua shen	0
 田野安蛛	tian ye an zhu	0
 饰带新光唇鱼	shi dai xin guang chun yu	0
 罗马尼亚布科维纳牧羊犬	luo ma ni ya bu ke wei na mu yang quan	0
@@ -13387,7 +13387,7 @@ sort: by_weight
 鳞背蚁鸟	lin bei yi niao	0
 哈特韦小油鲶	ha te wei xiao you nian	0
 嫩绿角翅夜蛾	nen lv jiao chi ye e	0
-米勒灰叶猴	mi lei hui ye hou	0
+米勒灰叶猴	mi le hui ye hou	0
 微小指环虫	wei xiao zhi huan chong	0
 约翰娜波鱼	yue han na bo yu	0
 强壮方格星虫	qiang zhuang fang ge xing chong	0
@@ -13447,7 +13447,7 @@ sort: by_weight
 布氏捲管螺	bu shi juan guan luo	0
 中腹片	zhong fu pian	0
 沙加小抹香鲸	sha jia xiao mo xiang jing	0
-勒克瑙嗜眼吸虫	lei ke nao shi yan xi chong	0
+勒克瑙嗜眼吸虫	le ke nao shi yan xi chong	0
 侏夜鹰	zhu ye ying	0
 大鳞梅氏鯿	da lin mei shi bian	0
 岐脊加夫蛤	qi ji jia fu ha	0
@@ -13483,7 +13483,7 @@ sort: by_weight
 庭院大蜗牛	ting yuan da wo niu	0
 延斑拟灯蛾	yan ban ni deng e	0
 太尉芋螺	tai wei yu luo	0
-加勒比圆鲀	jia lei bi yuan tun	0
+加勒比圆鲀	jia le bi yuan tun	0
 考克斯鮈塘鳢	kao ke si ju tang li	0
 小拟叶	xiao ni ye	0
 汤玛氏宝螺	tang ma shi bao luo	0
@@ -13585,7 +13585,7 @@ sort: by_weight
 中侏罗世焦氏峨眉龙	zhong zhu luo shi jiao shi e mei long	0
 日本糯鳗	ri ben nuo man	0
 沃卡多招潮蟹	wo ka duo zhao chao xie	0
-圣赫勒拿岛戴胜	sheng he lei na dao dai sheng	0
+圣赫勒拿岛戴胜	sheng he le na dao dai sheng	0
 中方虫	zhong fang chong	0
 颊纹双板盾尾鱼	jia wen shuang ban dun wei yu	0
 亚爱尔兰鹿	ya ai er lan lu	0
@@ -13709,7 +13709,7 @@ sort: by_weight
 谢氏多指马鲅	xie shi duo zhi ma ba	0
 秘鲁白眉针尾雀	bi lu bai mei zhen wei que	0
 大眼阿科斯喉盘鱼	da yan a ke si hou pan yu	0
-穆勒海目虫	mu lei hai mu chong	0
+穆勒海目虫	mu le hai mu chong	0
 西里伯斯犬吻蝠	xi li bo si quan wen fu	0
 长鳍竹筴鱼	zhang qi zhu ce yu	0
 真精器鱼	zhen jing qi yu	0
@@ -13763,7 +13763,7 @@ sort: by_weight
 健角剑夜蛾	jian jiao jian ye e	0
 驼峰大鹦嘴鱼	tuo feng da ying zui yu	0
 东方白背秃鹰	dong fang bai bei tu ying	0
-锡林郭勒血蜱	xi lin guo lei xue pi	0
+锡林郭勒血蜱	xi lin guo le xue pi	0
 桑木蝨	sang mu shi	0
 谢尔曼氏鲸油鲶	xie er man shi jing you nian	0
 宽扁高壳溞	kuan bian gao ke sao	0
@@ -13804,7 +13804,7 @@ sort: by_weight
 黄带新东洋金鳞鱼	huang dai xin dong yang jin lin yu	0
 似哺乳类爬行动物	shi bu ru lei pa xing dong wu	0
 牛准舌唇鱼	niu zhun she chun yu	0
-泰勒氏短革单棘鲀	tai lei shi duan ge dan ji tun	0
+泰勒氏短革单棘鲀	tai le shi duan ge dan ji tun	0
 百慕大小公鱼	bai mu da xiao gong yu	0
 窄唇纲	zhai chun gang	0
 小刺石鮰	xiao ci shi hui	0
@@ -13840,7 +13840,7 @@ sort: by_weight
 印度牛尾鱼	yin du niu wei yu	0
 艾莫劳峡谷梗	ai mo lao xia gu geng	0
 灰白小霸鹟	hui bai xiao ba weng	0
-角距手参	jiao ju shou can	0
+角距手参	jiao ju shou shen	0
 拟蔷薇切叶蜂	ni qiang wei qie ye feng	0
 黑冠黄雀鹀属	hei guan huang que wu shu	0
 重要狭蚤	zhong yao xia zao	0
@@ -13980,7 +13980,7 @@ sort: by_weight
 暖曙凤蝶	nuan shu feng die	0
 橙斑革单棘鲀	cheng ban ge dan ji tun	0
 白尾鹲	bai wei meng	0
-巴西勒鲸	ba xi lei jing	0
+巴西勒鲸	ba xi le jing	0
 展翼指环虫	zhan yi zhi huan chong	0
 美洲吉氏软杜父鱼	mei zhou ji shi ruan du fu yu	0
 奥蒂长吻副角鲀	ao di zhang wen fu jiao tun	0
@@ -14373,7 +14373,7 @@ sort: by_weight
 横带此鮆鲷	heng dai ci ci diao	0
 简丝帽水母	jian si mao shui mu	0
 蜂巢底尾鳕	feng chao di wei xue	0
-尖细异赛瓜参	jian xi yi sai gua can	0
+尖细异赛瓜参	jian xi yi sai gua shen	0
 银灰白线蚓	yin hui bai xian yin	0
 圆凹囊糠虾	yuan ao nang kang xia	0
 纽厄尔剪水鹱	niu e er jian shui hu	0
@@ -14652,7 +14652,7 @@ sort: by_weight
 新几内亚长颈龟	xin ji nei ya zhang jing gui	0
 副海鲂科	fu hai fang ke	0
 湖北正应	hu bei zheng ying	0
-沙勒氏搏鱼	sha lei shi bo yu	0
+沙勒氏搏鱼	sha le shi bo yu	0
 新斑蝶	xin ban die	0
 麦哲伦斜肋海蛳螺	mai zhe lun xie le hai si luo	0
 光榮織紋螺	guang rong zhi wen luo	0
@@ -14782,7 +14782,7 @@ sort: by_weight
 畸形草种蝇	ji xing cao zhong ying	0
 墨西哥红膝鸟蛛	mo xi ge hong xi niao zhu	0
 褐纹翅野螟	he wen chi ye ming	0
-硬指参	ying zhi can	0
+硬指参	ying zhi shen	0
 咖啡灭字脊虎天牛	ka fei mie zi ji hu tian niu	0
 三列扭柱螺	san lie niu zhu luo	0
 褐光尾鲨	he guang wei sha	0
@@ -14956,7 +14956,7 @@ sort: by_weight
 灰雕鸮	hui diao xiao	0
 大指爪泉戎	da zhi zhao quan rong	0
 双毛圆星萤	shuang mao yuan xing ying	0
-库什曼瓶砂虫	ku shen man ping sha chong	0
+库什曼瓶砂虫	ku shi man ping sha chong	0
 莫氏半棘鮠	mo shi ban ji wei	0
 大楷筆螺	da kai bi luo	0
 月间掌舟蛾	yue jian zhang zhou e	0
@@ -15033,7 +15033,7 @@ sort: by_weight
 胸斑血鰕虎鱼	xiong ban xue xia hu yu	0
 褐凹翅萤叶甲	he ao chi ying ye jia	0
 窄鞭冠鮟鱇	zhai bian guan an kang	0
-日本五角瓜参	ri ben wu jiao gua can	0
+日本五角瓜参	ri ben wu jiao gua shen	0
 黑胸长柄茧蜂	hei xiong zhang bing jian feng	0
 伊丕灰蝶属	yi pi hui die shu	0
 科科斯群岛滨珊瑚	ke ke si qun dao bin shan hu	0
@@ -15228,7 +15228,7 @@ sort: by_weight
 白边拟槌角蝗	bai bian ni chui jiao huang	0
 斑背燕尾	ban bei yan wei	0
 钱包海棉	qian bao hai mian	0
-加勒比珠光芋螺	jia lei bi zhu guang yu luo	0
+加勒比珠光芋螺	jia le bi zhu guang yu luo	0
 猫形食肉类	mao xing shi rou lei	0
 凤庆无角黑山羊	feng qing wu jiao hei shan yang	0
 蝲姑	la gu	0
@@ -15243,7 +15243,7 @@ sort: by_weight
 台湾黄肖叶甲	tai wan huang xiao ye jia	0
 南澳下鱵鱼	nan ao xia zhen yu	0
 梦幻芋螺	meng huan yu luo	0
-加勒比芋螺	jia lei bi yu luo	0
+加勒比芋螺	jia le bi yu luo	0
 黑吻宽齿雀鲷	hei wen kuan chi que diao	0
 荒漠雕鸮	huang mo diao xiao	0
 东方日射贝	dong fang ri she bei	0
@@ -15319,7 +15319,7 @@ sort: by_weight
 海地岛鼠	hai di dao shu	0
 穴小鸮	xue xiao xiao	0
 粗脊天牛	cu ji tian niu	0
-布希勒副单棘鲀	bu xi lei fu dan ji tun	0
+布希勒副单棘鲀	bu xi le fu dan ji tun	0
 台湾枪鱼	tai wan qiang yu	0
 灰翅喇叭声鹤	hui chi la ba sheng he	0
 有性虫	you xing chong	0
@@ -15385,7 +15385,7 @@ sort: by_weight
 理查德巴哈马芋螺	li cha de ba ha ma yu luo	0
 伪沟跗地种蝇	wei gou fu de zhong ying	0
 五脊虎鮋	wu ji hu you	0
-紫轮参	zi lun can	0
+紫轮参	zi lun shen	0
 齿偶舟蛾	chi ou zhou e	0
 斑蝶敌娥	ban die di e	0
 饰圈刺尾革单棘鲀	shi quan ci wei ge dan ji tun	0
@@ -15428,7 +15428,7 @@ sort: by_weight
 牛蹄钟螺	niu ti zhong luo	0
 滨鹬鞭带吸虫	bin yu bian dai xi chong	0
 武隆园蛛	wu long yuan zhu	0
-赫勒尔氏矛丽鱼	he lei er shi mao li yu	0
+赫勒尔氏矛丽鱼	he le er shi mao li yu	0
 中华鳞舌杜父鱼	zhong hua lin she du fu yu	0
 红尾牛顿莺	hong wei niu dun ying	0
 珍贝珠	zhen bei zhu	0
@@ -15496,7 +15496,7 @@ sort: by_weight
 珍珠花瓣蟹	zhen zhu hua ban xie	0
 荒地剑角蝗	huang di jian jiao huang	0
 直伸肖蛸	zhi shen xiao shao	0
-帕特大勒梗犬	pa te da lei geng quan	0
+帕特大勒梗犬	pa te da le geng quan	0
 摹仿穗肩鳚	mo fang sui jian wei	0
 巴布亚毛腿夜鹰	ba bu ya mao tui ye ying	0
 南极光眼虫	nan ji guang yan chong	0
@@ -15548,11 +15548,11 @@ sort: by_weight
 委内瑞拉穴鸮	wei nei rui la xue xiao	0
 肝叶馒头蟹	gan ye man tou xie	0
 大西洋牛鼻鲼	da xi yang niu bi fen	0
-蛹形细卡勒虫	yong xing xi ka lei chong	0
+蛹形细卡勒虫	yong xing xi ka le chong	0
 褐副鳞鲀	he fu lin tun	0
 挂墩短脉纹石蛾	gua dun duan mai wen shi e	0
 台湾中国石龙子	tai wan zhong guo shi long zi	0
-加勒比骨顶	jia lei bi gu ding	0
+加勒比骨顶	jia le bi gu ding	0
 灰胸长尾霸鹟	hui xiong zhang wei ba weng	0
 褐体卡萤叶甲	he ti ka ying ye jia	0
 角鼻龙下目	jiao bi long xia mu	0
@@ -15658,7 +15658,7 @@ sort: by_weight
 展翼花仙螺	zhan yi hua xian luo	0
 褐翅圆眼花天牛	he chi yuan yan hua tian niu	0
 中国冠毛犬犬	zhong guo guan mao quan quan	0
-史达勒克兽属	shi da lei ke shou shu	0
+史达勒克兽属	shi da le ke shou shu	0
 玻利维亚娇鹟	bo li wei ya jiao weng	0
 申古黄金勾丁鱼	shen gu huang jin gou ding yu	0
 斜带缺尾蚬蝶	xie dai que wei xian die	0
@@ -15891,7 +15891,7 @@ sort: by_weight
 哈瓦那褐猫	ha wa na he mao	0
 苏门答腊毛冠鹿	su men da la mao guan lu	0
 灰黑瓢鳍鰕虎鱼	hui hei piao qi xia hu yu	0
-密勒氏胸电鳗	mi lei shi xiong dian man	0
+密勒氏胸电鳗	mi le shi xiong dian man	0
 繮纹多棘鳞鲀	jiang wen duo ji lin tun	0
 銹色细齿笛鲷	xiu se xi chi di diao	0
 长尾奈波鰕虎鱼	zhang wei nai bo xia hu yu	0
@@ -16293,8 +16293,8 @@ sort: by_weight
 莫螈	mo yuan	0
 日龟虎蛾	ri gui hu e	0
 白尾长耳大野兔	bai wei zhang er da ye tu	0
-勒维拉格吉多岛穴鸮	lei wei la ge ji duo dao xue xiao	0
-参议员海扇蛤	can yi yuan hai shan ha	0
+勒维拉格吉多岛穴鸮	le wei la ge ji duo dao xue xiao	0
+参议员海扇蛤	shen yi yuan hai shan ha	0
 直纹合叶珊瑚	zhi wen he ye shan hu	0
 圆翅波纹灰蝶	yuan chi bo wen hui die	0
 圆柱前管虫	yuan zhu qian guan chong	0
@@ -16397,7 +16397,7 @@ sort: by_weight
 粗甲裂额蟹	cu jia lie e xie	0
 山楔尾草鹀	shan xie wei cao wu	0
 新疆平直蚤	xin jiang ping zhi zao	0
-勒菲歧须鮠	lei fei qi xu wei	0
+勒菲歧须鮠	le fei qi xu wei	0
 澳大利亚短颈龟	ao da li ya duan jing gui	0
 维氏歧须鮠	wei shi qi xu wei	0
 绿草玫瑰鹦鹉	lv cao mei gui ying wu	0
@@ -16798,7 +16798,7 @@ sort: by_weight
 对称瓦浮萤	dui chen wa fu ying	0
 遮颜蛾	zhe yan e	0
 瓜叶菊潜夜蛾	gua ye ju qian ye e	0
-呼勒德追蛛	hu lei de zhui zhu	0
+呼勒德追蛛	hu le de zhui zhu	0
 狭鳞庸鲽	xia lin yong die	0
 鳞冠侏霸鹟	lin guan zhu ba weng	0
 怪常室茧蜂	guai chang shi jian feng	0
@@ -16904,7 +16904,7 @@ sort: by_weight
 非洲丛鵙属	fei zhou cong ju shu	0
 肩纹长脚金花虫	jian wen zhang jiao jin hua chong	0
 登布异吻象鼻鱼	deng bu yi wen xiang bi yu	0
-小圣赫勒拿岛海燕	xiao sheng he lei na dao hai yan	0
+小圣赫勒拿岛海燕	xiao sheng he le na dao hai yan	0
 澳大利亚法螺	ao da li ya fa luo	0
 食植类昆虫	shi zhi lei kun chong	0
 黑缘瓢眼鰕虎鱼	hei yuan piao yan xia hu yu	0
@@ -17059,7 +17059,7 @@ sort: by_weight
 河川腹囊海龙	he chuan fu nang hai long	0
 褐短须石首鱼	he duan xu shi shou yu	0
 共位群内捕食	gong wei qun nei bu shi	0
-粘细锚参	zhan xi mao can	0
+粘细锚参	zhan xi mao shen	0
 展尾龙	zhan wei long	0
 黑伪瓢拟步行虫	hei wei piao ni bu xing chong	0
 云南九节肖叶甲	yun nan jiu jie xiao ye jia	0
@@ -17253,7 +17253,7 @@ sort: by_weight
 白颊灰卷尾	bai jia hui juan wei	0
 隆线异饰肛螽	long xian yi shi gang zhong	0
 天祝古柏线虫	tian zhu gu bai xian chong	0
-阿勒泰鱥	a lei tai gui	0
+阿勒泰鱥	a le tai gui	0
 白楔拟植盲蝽	bai xie ni zhi mang chun	0
 寄蛾科	ji e ke	0
 侏儒海马	zhu ru hai ma	0
