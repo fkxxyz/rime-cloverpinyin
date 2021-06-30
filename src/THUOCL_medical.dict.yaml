@@ -380,7 +380,7 @@ sort: by_weight
 医学观察	yi xue guan cha	5929
 知觉	zhi jue	5888
 流行病学调查	liu xing bing xue diao cha	5876
-颈椎	jing chui	5858
+颈椎	jing zhui	5858
 医德	yi de	5809
 疑似病例	yi si bing li	5792
 贫血	pin xue	5774
@@ -570,7 +570,7 @@ sort: by_weight
 腹腔	fu qiang	3467
 脾胃	pi wei	3461
 综合症	zong he zheng	3458
-颈椎病	jing chui bing	3451
+颈椎病	jing zhui bing	3451
 肝炎	gan yan	3419
 中西医结合	zhong xi yi jie he	3407
 学名	xue ming	3406
@@ -815,7 +815,7 @@ sort: by_weight
 当归	dang gui	2037
 狂躁	kuang zao	2030
 冬虫夏草	dong chong xia cao	2014
-粘膜	zhan mo	2013
+粘膜	nian mo	2013
 受体	shou ti	2010
 消毒剂	xiao du ji	2010
 易感人群	yi gan ren qun	2006
@@ -1766,7 +1766,7 @@ sort: by_weight
 遗精	yi jing	558
 槐花	huai hua	557
 汗毛	han mao	557
-多普勒	duo pu lei	557
+多普勒	duo pu le	557
 过渡带	guo du dai	556
 矫形	jiao xing	556
 意识障碍	yi shi zhang ai	555
@@ -1969,7 +1969,7 @@ sort: by_weight
 复壮	fu zhuang	460
 肌无力	ji wu li	459
 动脉瘤	dong mai liu	459
-大长今	da zhang jin	458
+大长今	da chang jin	458
 猩红热	xing hong re	458
 飞沫传播	fei mo chuan bo	458
 病毒携带者	bing du xie dai zhe	457
@@ -3789,7 +3789,7 @@ sort: by_weight
 车前草	che qian cao	121
 霉菌感染	mei jun gan ran	121
 广东凉茶	guang dong liang cha	121
-彩色多普勒超声	cai se duo pu lei chao sheng	121
+彩色多普勒超声	cai se duo pu le chao sheng	121
 缢死	yi si	121
 滴虫	di chong	121
 附睾炎	fu gao yan	120
@@ -5565,7 +5565,7 @@ sort: by_weight
 百多邦	bai duo bang	49
 氯霉素滴眼液	lv mei su di yan ye	49
 透骨草	tou gu cao	49
-经颅多普勒	jing lu duo pu lei	49
+经颅多普勒	jing lu duo pu le	49
 乳头内陷	ru tou nei xian	49
 超氧化物歧化酶	chao yang hua wu qi hua mei	49
 病态人格	bing tai ren ge	49
@@ -8891,7 +8891,7 @@ sort: by_weight
 头孢唑肟	tou bao zuo wo	13
 培氟沙星	pei fu sha xing	13
 喉罩	hou zhao	13
-多普勒检查	duo pu lei jian cha	13
+多普勒检查	duo pu le jian cha	13
 遗传药理学	yi chuan yao li xue	13
 唯达宁	wei da ning	13
 榄香烯	lan xiang xi	13
@@ -11339,7 +11339,7 @@ sort: by_weight
 头孢氨苄甲氧苄啶胶囊	tou bao an bian jia yang bian ding jiao nang	6
 多西他赛注射液	duo xi ta sai zhu she ye	6
 复方布洛伪麻缓释片	fu fang bu luo wei ma huan shi pian	6
-经颅多普勒超声	jing lu duo pu lei chao sheng	6
+经颅多普勒超声	jing lu duo pu le chao sheng	6
 脏腑辨证	zang fu bian zheng	6
 嗜眠症	shi mian zheng	6
 清开灵胶囊	qing kai ling jiao nang	6
@@ -12916,7 +12916,7 @@ sort: by_weight
 心理神经免疫学	xin li shen jing mian yi xue	3
 甲泼尼龙	jia po ni long	3
 细胞生长肽	xi bao sheng zhang tai	3
-哈勒曼	ha lei man	3
+哈勒曼	ha le man	3
 先天性喉喘鸣	xian tian xing hou chuan ming	3
 泰利必妥	tai li bi tuo	3
 五氟利多片	wu fu li duo pian	3
@@ -13666,7 +13666,7 @@ sort: by_weight
 紫雪颗粒	zi xue ke li	3
 酯酶	zhi mei	3
 注射用转化糖	zhu she yong zhuan hua tang	3
-彩色多普勒血流显像	cai se duo pu lei xue liu xian xiang	3
+彩色多普勒血流显像	cai se duo pu leixue liu xian xiang	3
 三白草	san bai cao	3
 中医药膳学	zhong yi yao shan xue	3
 夫西地酸钠	fu xi de suan na	3
@@ -13831,7 +13831,7 @@ sort: by_weight
 脑蛋白水解物注射液	nao dan bai shui jie wu zhu she ye	3
 异黄樟素	yi huang zhang su	3
 肺内异物	fei nei yi wu	3
-埃勒斯	ai lei si	3
+埃勒斯	ai le si	3
 庆大霉素滴眼液	qing da mei su di yan ye	3
 森鸥外	sen ou wai	3
 醋酸亮丙瑞林	cu suan liang bing rui lin	3

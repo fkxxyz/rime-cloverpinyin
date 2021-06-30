@@ -26,7 +26,7 @@ sort: by_weight
 解决方法	jie jue fang fa	101916
 用户名	yong hu ming	100988
 头文件	tou wen jian	97039
-命令行	ming ling xing	93940
+命令行	ming ling hang	93940
 实例化	shi li hua	91876
 递归	di gui	91824
 父类	fu lei	88194
@@ -98,7 +98,7 @@ sort: by_weight
 抛出异常	pao chu yi chang	40479
 类库	lei ku	40453
 代码实现	dai ma shi xian	40429
-标识符	biao zhi fu	39960
+标识符	biao shi fu	39960
 方法调用	fang fa diao yong	39921
 直接访问	zhi jie fang wen	39429
 编程语言	bian cheng yu yan	39016
@@ -110,7 +110,7 @@ sort: by_weight
 快捷键	kuai jie jian	38086
 字节数	zi jie shu	37962
 设计模式	she ji mo shi	37948
-重定向	zhong ding xiang	37561
+重定向	chong ding xiang	37561
 调用函数	diao yong han shu	37283
 可执行文件	ke zhi xing wen jian	37260
 代码块	dai ma kuai	37184
@@ -128,10 +128,10 @@ sort: by_weight
 示例代码	shi li dai ma	34374
 文件路径	wen jian lu jing	34003
 参数传递	can shu chuan di	33692
-重置	zhong zhi	33682
+重置	chong zhi	33682
 新版本	xin ban ben	33612
 偏移量	pian yi liang	33571
-重命名	zhong ming ming	33239
+重命名	chong ming ming	33239
 跨平台	kua ping tai	33013
 文本文件	wen ben wen jian	32749
 工作原理	gong zuo yuan li	32536
@@ -470,7 +470,7 @@ sort: by_weight
 增删改查	zeng shan gai cha	14555
 左移	zuo yi	14544
 数据模型	shu ju mo xing	14490
-重试	zhong shi	14481
+重试	chong shi	14481
 内存溢出	nei cun yi chu	14471
 删除元素	shan chu yuan su	14420
 批处理	pi chu li	14397
@@ -586,7 +586,7 @@ sort: by_weight
 建表	jian biao	12227
 两个指针	liang ge zhi zhen	12217
 八进制	ba jin zhi	12211
-重做	zhong zuo	12180
+重做	chong zuo	12180
 预编译	yu bian yi	12180
 显示图片	xian shi tu pian	12151
 新浪微博	xin lang wei bo	12150
@@ -1173,7 +1173,7 @@ sort: by_weight
 软链接	ruan lian jie	6684
 数据库设计	shu ju ku she ji	6683
 记录日志	ji lu ri zhi	6681
-重发	zhong fa	6677
+重发	chong fa	6677
 状态机	zhuang tai ji	6677
 子字符串	zi zi fu chuan	6675
 最终用户	zui zhong yong hu	6670
@@ -1270,7 +1270,7 @@ sort: by_weight
 封装性	feng zhuang xing	6215
 引用传递	yin yong chuan di	6210
 网络流	wang luo liu	6205
-弹出窗口	dan chu chuang kou	6193
+弹出窗口	tan chu chuang kou	6193
 进栈	jin zhan	6191
 显示方式	xian shi fang shi	6190
 缩放比例	suo fang bi li	6168
@@ -2522,7 +2522,7 @@ sort: by_weight
 文件服务器	wen jian fu wu qi	2859
 内存数据库	nei cun shu ju ku	2858
 程序异常	cheng xu yi chang	2856
-重装系统	zhong zhuang xi tong	2856
+重装系统	chong zhuang xi tong	2856
 安卓系统	an zhuo xi tong	2854
 断点调试	duan dian tiao shi	2854
 换出	huan chu	2850
@@ -12858,3 +12858,4 @@ sort: by_weight
 读写控制电路	du xie kong zhi dian lu	10
 超流水线结构	chao liu shui xian jie gou	10
 页面替换策略	ye mian ti huan ce lve	10
+

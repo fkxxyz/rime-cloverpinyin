@@ -278,7 +278,7 @@ sort: by_weight
 低价	di jia	51915
 进出口	jin chu kou	51867
 发改委	fa gai wei	51662
-反弹	fan dan	51645
+反弹	fan tan	51645
 欧元	ou yuan	51614
 控股	kong gu	51444
 转让	zhuan rang	51273
@@ -320,7 +320,7 @@ sort: by_weight
 国际上	guo ji shang	42843
 产值	chan zhi	42791
 宣告	xuan gao	42487
-下调	xia diao	42398
+下调	xia tiao	42398
 款项	kuan xiang	42305
 利息	li xi	42302
 国民经济	guo min jing ji	42025
@@ -380,7 +380,7 @@ sort: by_weight
 区域性	qu yu xing	33169
 冻结	dong jie	33061
 数据库	shu ju ku	33029
-行长	xing zhang	32913
+行长	hang zhang	32913
 核准	he zhun	32880
 一季度	yi ji du	32755
 楼盘	lou pan	32718
@@ -808,7 +808,7 @@ sort: by_weight
 国安	guo an	6008
 税金	shui jin	5989
 南洋	nan yang	5976
-总行	zong xing	5952
+总行	zong hang	5952
 斩获	zhan huo	5951
 财政赤字	cai zheng chi zi	5934
 背书	bei shu	5914
@@ -1014,7 +1014,7 @@ sort: by_weight
 风控	feng kong	2981
 仓位	cang wei	2953
 国电	guo dian	2941
-跨行	kua xing	2937
+跨行	kua hang	2937
 存单	cun dan	2936
 纪念章	ji nian zhang	2880
 拒付	ju fu	2850
@@ -1081,7 +1081,7 @@ sort: by_weight
 外高桥	wai gao qiao	2257
 牌价	pai jia	2244
 熊市	xiong shi	2243
-长阳	zhang yang	2243
+长阳	chang yang	2243
 假钞	jia chao	2240
 领票	ling piao	2238
 汇出	hui chu	2230
@@ -1330,7 +1330,7 @@ sort: by_weight
 诡计	gui ji	830
 天保	tian bao	827
 万华	wan hua	827
-苏泊尔	su po er	817
+苏泊尔	su bo er	817
 超跌	chao die	814
 银质	yin zhi	811
 势态	shi tai	807
@@ -1351,7 +1351,7 @@ sort: by_weight
 权证	quan zheng	780
 信用度	xin yong du	780
 白金卡	bai jin ka	779
-重估	zhong gu	774
+重估	chong gu	774
 流转税	liu zhuan shui	774
 长运	zhang yun	771
 硬通货	ying tong huo	771
@@ -1613,7 +1613,7 @@ sort: by_weight
 摩根斯坦利	mo gen si tan li	290
 发行期	fa xing qi	290
 天香	tian xiang	289
-厦华	sha hua	288
+厦华	xia hua	288
 煤气化	mei qi hua	287
 国资局	guo zi ju	286
 探路者	tan lu zhe	285
@@ -2417,7 +2417,7 @@ sort: by_weight
 保管人	bao guan ren	19
 先声药业	xian sheng yao ye	19
 良运	liang yun	18
-长电	zhang dian	18
+长电	chang dian	18
 天津松江	tian jin song jiang	18
 广电运通	guang dian yun tong	18
 厦门钨业	xia men wu ye	18
@@ -3017,7 +3017,7 @@ sort: by_weight
 万家基金	wan jia ji jin	4
 海螺型材	hai luo xing cai	4
 兴利集团	xing li ji tuan	4
-不便宜	bu bian yi	4
+不便宜	bu pian yi	4
 风险提示函	feng xian ti shi han	4
 中原特钢	zhong yuan te gang	4
 高银地产	gao yin di chan	4
@@ -3833,3 +3833,4 @@ sort: by_weight
 东碳	dong tan	1
 华银电力	hua yin dian li	1
 资本运作	zi ben yun zuo	1
+

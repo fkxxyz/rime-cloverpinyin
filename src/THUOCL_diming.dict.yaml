@@ -52,7 +52,7 @@ sort: by_weight
 研究院	yan jiu yuan	106061
 上海市	shang hai shi	103874
 车站	che zhan	101570
-南都	nan dou	100491
+南都	nan du	100491
 路口	lu kou	99482
 幼儿园	you er yuan	99108
 大厅	da ting	96687
@@ -198,7 +198,7 @@ sort: by_weight
 美的	mei de	27918
 隶属	li shu	27767
 复旦大学	fu dan da xue	27663
-中都	zhong dou	27644
+中都	zhong du	27644
 合肥市	he fei shi	27520
 天津市	tian jin shi	27495
 总统府	zong tong fu	27371
@@ -418,7 +418,7 @@ sort: by_weight
 前海	qian hai	11384
 台湾海峡	tai wan hai xia	11366
 宜宾	yi bin	11339
-长治	zhang zhi	11334
+长治	chang zhi	11334
 罗湖	luo hu	11301
 急救中心	ji jiu zhong xin	11287
 三亚市	san ya shi	11266
@@ -515,7 +515,7 @@ sort: by_weight
 厦门市	xia men shi	8701
 实验中学	shi yan zhong xue	8654
 南城	nan cheng	8645
-菜地	cai de	8623
+菜地	cai di	8623
 南湖	nan hu	8618
 山头	shan tou	8569
 南区	nan qu	8552
@@ -649,7 +649,7 @@ sort: by_weight
 广袤	guang mao	6584
 东段	dong duan	6562
 加利福尼亚州	jia li fu ni ya zhou	6562
-闵行	min xing	6556
+闵行	min hang	6556
 市人民政府	shi ren min zheng fu	6553
 大洲	da zhou	6545
 三环路	san huan lu	6540
@@ -1523,7 +1523,7 @@ sort: by_weight
 伊宁市	yi ning shi	2422
 宝塔	bao ta	2421
 华泰	hua tai	2417
-大黄	dai huang	2415
+大黄	da huang	2415
 胶州市	jiao zhou shi	2414
 东大门	dong da men	2414
 亚利桑那州	ya li sang na zhou	2413
@@ -2472,7 +2472,7 @@ sort: by_weight
 长堤	zhang di	1212
 湘东	xiang dong	1212
 通化市	tong hua shi	1212
-上地	shang de	1211
+上地	shang di	1211
 韶山路	shao shan lu	1211
 北京体育大学	bei jing ti yu da xue	1210
 五一大道	wu yi da dao	1209
