@@ -114,6 +114,7 @@ translator:
   dictionary: clover
   preedit_format:
     - xform/o(\w)/0$1/        # 零聲母先改爲0，以方便後面的轉換
+    - xform/(\w)n/$1ui/
     - xform/(\w)k/$1ei/       # 雙拼第二碼轉換爲韻母
     - xform/(\w)m/$1un/       # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
     - xform/(\w)t/$1eng/      # 當然也可以採取事先將雙拼碼變爲大寫的辦法來與轉換過的拼音做區分，可誰讓我是高手呢
@@ -130,7 +131,7 @@ translator:
     - xform/([gkhaevrzcs])x/$1ua/
     - xform/(\w)x/$1ia/
     - xform/(\w)w/$1en/
-    - xform/(\w)t/$1ang/
+    - xform/(\w)s/$1ang/
     - xform/(\w)r/$1an/
     - xform/(\w)q/$1ao/       # 默默檢查：雙拼碼 o 已經轉換過了
     - xform/(\w)p/$1ai/
@@ -141,7 +142,6 @@ translator:
     - xform/(\w)z/$1ou/
     - xform/([nl])n/$1ve/
     - xform/([jqxy])n/$1ue/
-    - xform/(\w)n/$1ui/
     - "xform/(^|[ '])u/$1zh/"  # 復原聲母，音節開始處的雙拼字母a改寫爲zh；其他位置的才真正是a
     - "xform/(^|[ '])a/$1ch/"
     - "xform/(^|[ '])i/$1sh/"
