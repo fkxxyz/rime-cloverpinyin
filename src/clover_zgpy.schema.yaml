@@ -1,0 +1,241 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: clover_zgpy
+  name: 四叶草紫光双拼
+  version: "1.0.0"
+  author:
+    - fkxxyz - https://www.fkxxyz.com
+  description: |
+    由🍀️四叶草亲自定制，特点：
+      1. 结合搜狗输入法的输入习惯
+      2. 默认开启 emoji 表情支持
+      3. 加上很多特殊符号的输入支持
+      4. 繁简切换支持
+      5. 许多智能纠错
+  dependencies:
+    - emoji
+
+switches:
+  - name: zh_simp_s2t
+    reset: 0
+    states: [ 简, 繁 ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+  - name: symbol_support
+    reset: 1
+    states: [ "无符", "符" ]
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+  - name: full_shape
+    reset: 0
+    states: [ 半, 全 ]
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, 英 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier@emoji_suggestion
+    - simplifier@symbol_support
+    - simplifier
+    - uniquifier
+
+simplifier:
+  option_name: zh_simp_s2t
+  opencc_config: s2t.json
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/             # 碼表中有幾個拼音不明的字，編碼成xx了，消滅他
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([zcs])h/$1/             # zh, ch, sh => z, c, s
+    - derive/^([zcs])([^h])/$1h$2/     # z, c, s => zh, ch, sh
+    - xform/^([aoe].*)$/O$1/  # 添上固定的零聲母o，先標記爲大寫O
+    - xform/en$/W/
+    - xform/eng$/T/
+    - xform/in$|uai$/Y/
+    - xform/^zh/U/
+    - xform/^sh/I/
+    - xform/uo$/O/
+    - xform/ai$/P/
+    - xform/^ch/A/
+    - xform/[iu]ang$/G/
+    - xform/ang$/S/  # ang should be placed after iang/uang
+    - xform/ie$/D/
+    - xform/ian$/F/
+    - xform/i?ong$/H/
+    - xform/er$|iu$/J/
+    - xform/ei$/K/
+    - xform/uan$/L/
+    - xform/ing$/;/
+    - xform/ou$/Z/
+    - xform/[iu]a$/X/
+    - xform/iao$/B/
+    - xform/ue$|ui$|ve$/N/
+    - xform/un$/M/
+    - xform/ao$/Q/ # ao should be placed after iao
+    - xform/an$/R/ # an should be placed after uan/ian
+    - xlit/WTYUIOPAGSDFHJKLZXBNMQR/wtyuiopagsdfhjklzxbnmqr/  # 最後把雙拼碼全部變小寫
+
+translator:
+  dictionary: clover
+  preedit_format:
+    - xform/o(\w)/0$1/        # 零聲母先改爲0，以方便後面的轉換
+    - xform/(\w)q/$1ei/       # 雙拼第二碼轉換爲韻母
+    - xform/(\w)n/$1un/       # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
+    - xform/(\w)g/$1eng/      # 當然也可以採取事先將雙拼碼變爲大寫的辦法來與轉換過的拼音做區分，可誰讓我是高手呢
+    - xform/(\w)w/$1ian/
+    - xform/([dtnljqx])r/$1iu/  # 對應多種韻母的雙拼碼，按搭配的聲母做區分（最好別用排除式如 [^o]r 容易出狀況）
+    - xform/0r/0er/             # 另一種情況，注意先不消除0，以防後面把e當作聲母轉換爲ch
+    - xform/([nljqx])t/$1iang/
+    - xform/(\w)t/$1uang/       # 上一行已經把對應到 iang 的雙拼碼 t 消滅，於是這裏不用再列舉相配的聲母
+    - xform/(\w)y/$1ing/
+    - xform/([dtnlgkhaevrzcs])o/$1uo/
+    - xform/(\w)p/$1uan/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([gkhaevrzcs])d/$1ua/
+    - xform/(\w)d/$1ia/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/       # 默默檢查：雙拼碼 o 已經轉換過了
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1iao/
+    - xform/(\w)x/$1ie/
+    - xform/([gkhaev])c/$1uai/
+    - xform/(\w)c/$1in/
+    - xform/(\w)b/$1ou/
+    - xform/([nl])m/$1ve/
+    - xform/([jqxy])m/$1ue/
+    - xform/(\w)m/$1ui/
+    - "xform/(^|[ '])a/$1zh/"  # 復原聲母，音節開始處的雙拼字母a改寫爲zh；其他位置的才真正是a
+    - "xform/(^|[ '])e/$1ch/"
+    - "xform/(^|[ '])v/$1sh/"
+    - xform/0(\w)/$1/          # 好了，現在可以把零聲母拿掉啦
+    - xform/([nl])v/$1ü/       # 這樣纔是漢語拼音 :-)
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+  full_shape:
+    "`": "｀"
+    "~": "～"
+    "!": "！"
+    "@": "＠"
+    "#": "＃"
+    "$": "￥"
+    "%": "％"
+    "^": "……"
+    "&": "＆"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "＋"
+    "-": "－"
+    "=": "＝"
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    "/": "、"
+    ";": "；"
+    "'": "‘"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+  half_shape:
+    "`": "·"
+    "~": "～"
+    "!": "！"
+    "@": "@"
+    "#": "#"
+    "$": "￥"
+    "%": "%"
+    "^": "……"
+    "&": "&"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "+"
+    "-": "-"
+    "=": "="
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    "/": "、"
+    ";": "；"
+    "'": "’"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+
+key_binder:
+  import_preset: default
+  bindings:
+    __patch:
+      - key_bindings:/emacs_editing  # emacs 习惯
+      - key_bindings:/move_by_word_with_tab  # tab 在单词间切换
+      - key_bindings:/paging_with_minus_equal  # 减号等号翻页
+      - key_bindings:/paging_with_comma_period   # 逗号句号翻页
+      - key_bindings:/paging_with_brackets   # 中括号翻页
+      - clover.key_bindings:/numbered_mode_switch   # Ctrl+Shift+数字 切换开关
+      - clover.key_bindings:/windows_compatible_mode_switch   # Windows 兼容
+      - clover.key_bindings:/kp_enter_is_return   # 小键盘回车设为普通回车
+
+ascii_composer:
+  import_preset: default
+  good_old_caps_lock: true
+  switch_key:
+    Shift_L: commit_code   # 左 Shift 切换直接上屏字母
+    Shift_R: commit_code   # 右 Shift 切换直接上屏字母
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: noop
+    Eisu_toggle: clear
+
+
