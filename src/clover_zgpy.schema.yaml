@@ -48,15 +48,6 @@ simplifier:
   option_name: zh_simp_s2t
   opencc_config: s2t.json
 
-emoji_suggestion:
-  opencc_config: emoji.json
-  option_name: emoji_suggestion
-  tips: all
-
-symbol_support:
-  opencc_config: symbol.json
-  option_name: symbol_support
-  tips: all
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
