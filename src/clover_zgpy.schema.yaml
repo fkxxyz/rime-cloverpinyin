@@ -115,31 +115,31 @@ translator:
   preedit_format:
     - xform/o(\w)/0$1/        # 零聲母先改爲0，以方便後面的轉換
     - xform/(\w)n/$1ui/
-    - xform/(\w)k/$1ei/       # 雙拼第二碼轉換爲韻母
-    - xform/(\w)m/$1un/       # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
-    - xform/(\w)t/$1eng/      # 當然也可以採取事先將雙拼碼變爲大寫的辦法來與轉換過的拼音做區分，可誰讓我是高手呢
-    - xform/(\w)f/$1ian/
-    - xform/([dtnljqx])j/$1iu/  # 對應多種韻母的雙拼碼，按搭配的聲母做區分（最好別用排除式如 [^o]r 容易出狀況）
-    - xform/0j/0er/             # 另一種情況，注意先不消除0，以防後面把e當作聲母轉換爲ch
     - xform/([nljqx])g/$1iang/
     - xform/(\w)g$/1uang/       # 上一行已經把對應到 iang 的雙拼碼 t 消滅，於是這裏不用再列舉相配的聲母
-    - xform/(\w);/$1ing/
-    - xform/([dtnlgkhaevrzcs])o/$1uo/
-    - xform/(\w)l/$1uan/
-    - xform/([jqx])h/$1iong/
-    - xform/(\w)h/$1ong/
-    - xform/([gkhaevrzcs])x/$1ua/
-    - xform/(\w)x/$1ia/
     - xform/(\w)w/$1en/
-    - xform/(\w)s/$1ang/
     - xform/(\w)r/$1an/
-    - xform/(\w)q/$1ao/       # 默默檢查：雙拼碼 o 已經轉換過了
-    - xform/(\w)p/$1ai/
-    - xform/(\w)b/$1iao/
-    - xform/(\w)d/$1ie/
+    - xform/0j/0er/             # 另一種情況，注意先不消除0，以防後面把e當作聲母轉換爲ch
+    - xform/(\w)t/$1eng/      # 當然也可以採取事先將雙拼碼變爲大寫的辦法來與轉換過的拼音做區分，可誰讓我是高手呢
     - xform/([gkhaev])y/$1uai/
     - xform/(\w)y/$1in/
+    - xform/([dtnlgkhaevrzcs])o/$1uo/
+    - xform/(\w)q/$1ao/       # 默默檢查：雙拼碼 o 已經轉換過了    
+    - xform/(\w)p/$1ai/
+    - xform/(\w)s/$1ang/
+    - xform/(\w)d/$1ie/
+    - xform/(\w)f/$1ian/
+    - xform/([jqx])h/$1iong/
+    - xform/(\w)h/$1ong/
+    - xform/([dtnljqx])j/$1iu/  # 對應多種韻母的雙拼碼，按搭配的聲母做區分（最好別用排除式如 [^o]r 容易出狀況）
+    - xform/(\w)k/$1ei/       # 雙拼第二碼轉換爲韻母
+    - xform/(\w)l/$1uan/
     - xform/(\w)z/$1ou/
+    - xform/([gkhaevrzcs])x/$1ua/
+    - xform/(\w)x/$1ia/
+    - xform/(\w)b/$1iao/
+    - xform/(\w)m/$1un/       # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
+    - xform/(\w);/$1ing/
     - xform/([nl])n/$1ve/
     - xform/([jqxy])n/$1ue/
     - "xform/(^|[ '])u/$1zh/"  # 復原聲母，音節開始處的雙拼字母a改寫爲zh；其他位置的才真正是a
