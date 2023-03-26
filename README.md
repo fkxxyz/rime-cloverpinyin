@@ -92,6 +92,7 @@ rime基础配置： [librime-prelude](https://github.com/rime/rime-prelude)
 
 ```shell
 git clone https://github.com/fkxxyz/rime-cloverpinyin.git
+cd rime-cloverpinyin
 git submodule update --init
 ```
 
