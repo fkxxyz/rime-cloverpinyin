@@ -88,12 +88,14 @@ rime基础库： [librime](https://github.com/rime/librime)
 
 rime基础配置： [librime-prelude](https://github.com/rime/rime-prelude)
 
-克隆此仓库，并下载所有 submodule
+克隆此仓库，并下载所有 submodule、拉取字典的 lfs 对象
 
 ```shell
 git clone https://github.com/fkxxyz/rime-cloverpinyin.git
 cd rime-cloverpinyin
 git submodule update --init
+git -C chinese-dictionary-3.6million lfs install
+git -C chinese-dictionary-3.6million lfs pull
 ```
 
 然后直接执行构建即可
