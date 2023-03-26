@@ -1,0 +1,21 @@
+[submodule "chinese-dictionary-3.6million"]
+	path = chinese-dictionary-3.6million
+	url = https://github.com/fkxxyz/chinese-dictionary-3.6million.git
+[submodule "rime-essay"]
+	path = rime-essay
+	url = https://github.com/rime/rime-essay.git
+[submodule "rime-pinyin-simp"]
+	path = rime-pinyin-simp
+	url = https://github.com/rime/rime-pinyin-simp.git
+[submodule "THUOCL"]
+	path = THUOCL
+	url = https://github.com/thunlp/THUOCL.git
+[submodule "rime-emoji"]
+	path = rime-emoji
+	url = https://github.com/rime/rime-emoji.git
+[submodule "rime-symbols"]
+	path = rime-symbols
+	url = https://github.com/fkxxyz/rime-symbols.git
+[submodule "libscel"]
+	path = libscel
+	url = https://github.com/fkxxyz/libscel.git
