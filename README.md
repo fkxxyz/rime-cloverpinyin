@@ -88,7 +88,14 @@ rime基础库： [librime](https://github.com/rime/librime)
 
 rime基础配置： [librime-prelude](https://github.com/rime/rime-prelude)
 
-克隆此仓库，然后直接执行构建即可
+克隆此仓库，并下载所有 submodule
+
+```shell
+git clone https://github.com/fkxxyz/rime-cloverpinyin.git
+git submodule update --init
+```
+
+然后直接执行构建即可
 
 ```shell
 ./build.sh
