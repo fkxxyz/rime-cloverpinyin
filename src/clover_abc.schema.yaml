@@ -1,0 +1,248 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: clover_flypy
+  name: 🍀️四叶草ABC双拼
+  version: "0.1"
+  author:
+    -Webster <webster.jiang@gmail.com>
+  description: |
+    🍀️四叶草ABC双拼：
+    以🍀️四叶草简体拼音为基础所配置的一款输入方案。
+  dependencies:
+    - emoji
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, 英 ]
+  - name: full_shape
+    reset: 0
+    states: [ 半, 全 ]
+  - name: zh_simp_s2t
+    reset: 0
+    states: [ 简, 繁 ]
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+  - name: symbol_support
+    reset: 1
+    states: [ "无符", "符" ]
+  - name: emoji_suggestion
+    reset: 1
+    states: [ 😑️, 😁️ ]
+  
+  
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier@emoji_suggestion
+    - simplifier@symbol_support
+    - simplifier
+    - uniquifier
+
+simplifier:
+  option_name: zh_simp_s2t
+  opencc_config: s2t.json
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:  # 拼寫運算規則，這個纔是實現雙拼方案的重點。寫法有很多種，當然也可以把四百多個音節碼一條一條地列舉
+    - erase/^xx$/             # 碼表中有幾個拼音不明的字，編碼成xx了，消滅他
+    - derive/^([jqxy])u$/$1v/
+    - xform/^zh/A/            # 替換聲母鍵，用大寫以防與原有的字母混淆
+    - xform/^ch/E/
+    - xform/^sh/V/
+    - xform/^([aoe].*)$/O$1/  # 添上固定的零聲母o，先標記爲大寫O
+    - xform/ei$/Q/            # 替換韻母鍵
+    - xform/ian$/W/           # ※2
+    - xform/er$|iu$/R/        # 對應兩種韻母的；音節er現在變爲OR了
+    - xform/[iu]ang$/T/       # ※1
+    - xform/ing$/Y/
+    - xform/uo$/O/
+    - xform/uan$/P/           # ※3
+    - xform/i?ong$/S/
+    - xform/[iu]a$/D/
+    - xform/en$/F/
+    - xform/eng$/G/
+    - xform/ang$/H/           # 檢查一下在此之前是否已轉換過了帶界音的ang；好，※1處有了
+    - xform/an$/J/            # 如果※2、※3還無有出現在上文中，應該把他們提到本行之前
+    - xform/iao$/Z/           # 對——像這樣讓iao提前出場
+    - xform/ao$/K/
+    - xform/in$|uai$/C/       # 讓uai提前出場
+    - xform/ai$/L/
+    - xform/ie$/X/
+    - xform/ou$/B/
+    - xform/un$/N/
+    - xform/[uv]e$|ui$/M/
+    - xlit/QWERTYOPASDFGHJKLZXCVBNM/qwertyopasdfghjklzxcvbnm/  # 最後把雙拼碼全部變小寫
+
+
+translator:
+  dictionary: clover
+  prism: clover_abc
+  enable_sentence: true               
+  enable_user_dict: true               
+  enable_encoder: true                 
+  encode_commit_history: true          
+  user_dict: user 
+  max_phrase_length: 10                                     
+  db_class: tabledb                     
+  disable_user_dict_for_patterns:       
+    - "^z.*$"
+  
+  preedit_format:             # 這段代碼用來將輸入的雙拼碼反轉爲全拼顯示；待見雙拼碼的可以把這段拿掉
+    - xform/o(\w)/0$1/        # 零聲母先改爲0，以方便後面的轉換
+    - xform/(\w)q/$1ei/       # 雙拼第二碼轉換爲韻母
+    - xform/(\w)n/$1un/       # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
+    - xform/(\w)g/$1eng/      # 當然也可以採取事先將雙拼碼變爲大寫的辦法來與轉換過的拼音做區分，可誰讓我是高手呢
+    - xform/(\w)w/$1ian/
+    - xform/([dtnljqx])r/$1iu/  # 對應多種韻母的雙拼碼，按搭配的聲母做區分（最好別用排除式如 [^o]r 容易出狀況）
+    - xform/0r/0er/             # 另一種情況，注意先不消除0，以防後面把e當作聲母轉換爲ch
+    - xform/([nljqx])t/$1iang/
+    - xform/(\w)t/$1uang/       # 上一行已經把對應到 iang 的雙拼碼 t 消滅，於是這裏不用再列舉相配的聲母
+    - xform/(\w)y/$1ing/
+    - xform/([dtnlgkhaevrzcs])o/$1uo/
+    - xform/(\w)p/$1uan/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([gkhaevrzcs])d/$1ua/
+    - xform/(\w)d/$1ia/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/       # 默默檢查：雙拼碼 o 已經轉換過了
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1iao/
+    - xform/(\w)x/$1ie/
+    - xform/([gkhaev])c/$1uai/
+    - xform/(\w)c/$1in/
+    - xform/(\w)b/$1ou/
+    - xform/([nl])m/$1ve/
+    - xform/([jqxy])m/$1ue/
+    - xform/(\w)m/$1ui/
+    - "xform/(^|[ '])a/$1zh/"  # 復原聲母，音節開始處的雙拼字母a改寫爲zh；其他位置的才真正是a
+    - "xform/(^|[ '])e/$1ch/"
+    - "xform/(^|[ '])v/$1sh/"
+    - xform/0(\w)/$1/          # 好了，現在可以把零聲母拿掉啦
+    - xform/([nl])v/$1ü/       # 這樣纔是漢語拼音 :-)
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+  full_shape:
+    "`": "｀"
+    "~": "～"
+    "!": "！"
+    "@": "＠"
+    "#": "＃"
+    "$": "￥"
+    "%": "％"
+    "^": "……"
+    "&": "＆"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "＋"
+    "-": "－"
+    "=": "＝"
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    "/": "、"
+    ";": "；"
+    "'": "‘"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+  half_shape:
+    "`": "·"
+    "~": "～"
+    "!": "！"
+    "@": "@"
+    "#": "#"
+    "$": "￥"
+    "%": "%"
+    "^": "……"
+    "&": "&"
+    "*": "×"
+    "(": "（"
+    ")": "）"
+    "_": "——"
+    "+": "+"
+    "-": "-"
+    "=": "="
+    "[": "【"
+    "]": "】"
+    "{": "｛"
+    "}": "｝"
+    "|": "｜"
+    "\\": "、"
+    "/": "、"
+    ";": "；"
+    "'": "’"
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "?": "？"
+
+
+key_binder:
+  import_preset: default
+  bindings:
+    __patch:
+      - key_bindings:/emacs_editing  # emacs 习惯
+      - key_bindings:/move_by_word_with_tab  # tab 在单词间切换
+      - key_bindings:/paging_with_minus_equal  # 减号等号翻页
+      - key_bindings:/paging_with_comma_period   # 逗号句号翻页
+      - key_bindings:/paging_with_brackets   # 中括号翻页
+      - clover.key_bindings:/numbered_mode_switch   # Ctrl+Shift+数字 切换开关
+      - clover.key_bindings:/windows_compatible_mode_switch   # Windows 兼容
+      - clover.key_bindings:/kp_enter_is_return   # 小键盘回车设为普通回车
+
+ascii_composer:
+  import_preset: default
+  good_old_caps_lock: true
+  switch_key:
+    Shift_L: commit_code   # 左 Shift 切换直接上屏字母
+    Shift_R: commit_code   # 右 Shift 切换直接上屏字母
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: noop
+    Eisu_toggle: clear
