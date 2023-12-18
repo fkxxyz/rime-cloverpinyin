@@ -34,7 +34,7 @@ jobs:
         run: |
           git submodule update --recursive --remote --rebase && bash ./build.sh && bash ./pack.sh `date +%y%m`
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: Packages for release
           path: data/clover.schema-*.zip
